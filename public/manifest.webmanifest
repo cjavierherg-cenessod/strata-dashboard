@@ -1,0 +1,25 @@
+{
+  "name": "STRATA Campo",
+  "short_name": "STRATA Campo",
+  "description": "Acceso movil a dashboards de campo STRATA.",
+  "start_url": "/app-campo",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F4EB",
+  "theme_color": "#991b1b",
+  "icons": [
+    {
+      "src": "/LOGO%20GTM.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/LOGO%20GTM.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

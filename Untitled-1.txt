@@ -1,0 +1,32 @@
+MCP error -32602: Input validation error: Invalid arguments for tool list_network_requests: [
+  {
+    "received": "Image",
+    "code": "invalid_enum_value",
+    "options": [
+      "document",
+      "stylesheet",
+      "image",
+      "media",
+      "font",
+      "script",
+      "texttrack",
+      "xhr",
+      "fetch",
+      "prefetch",
+      "eventsource",
+      "websocket",
+      "manifest",
+      "signedexchange",
+      "ping",
+      "cspviolationreport",
+      "preflight",
+      "fedcm",
+      "other"
+    ],
+    "path": [
+      "resourceTypes",
+      0
+    ],
+    "message": "Invalid enum value. Expected 'document' | 'stylesheet' | 'image' | 'media' | 'font' | 'script' | 'texttrack' | 'xhr' | 'fetch' | 'prefetch' | 'eventsource' | 'websocket' | 'manifest' | 'signedexchange' | 'ping' | 'cspviolationreport' | 'preflight' | 'fedcm' | 'other', received 'Image'"
+  }
+]

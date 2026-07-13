@@ -1,0 +1,30 @@
+api/*.test.ts
+api/send-resend-test-email.ts
+.env
+.env.*
+tmp/
+outputs/
+docs/
+manuales/
+android/
+cell-dashboard/
+scripts/
+tools/
+supabase/
+*.sql
+*.xlsx
+*.xls
+out*.html
+brand24_apiDocs.json
+*.code-workspace
+/LOGO GTM.jpeg
+/LOGO GTM.png
+/Strata Sphere Logo - Black with White Background - 5000x5000.png
+/Strata Sphere Logo - Original - 5000x5000.png
+/Strata Sphere Logo - Original with Transparent Background - 5000x5000.png
+/Strata Sphere Logo - White with Black Background - 5000x5000.png
+/Strata Sphere Logo - White with Black Background-- - 5000x5000.png
+/public/geo/guatemala-departments.geojson
+/public/geo/minfin-guatemala-departments.topojson
+/public/geo/minfin-guatemala-municipalities.topojson
+/public/geo/sice-guatemala-crosswalk.json

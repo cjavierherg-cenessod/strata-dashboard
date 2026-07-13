@@ -1,0 +1,395 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --sice-base: #9B1919;
+    --sice-bg: #F7F4EB;
+    --sice-text: #4A4741;
+    --sice-accent: #D1A153;
+    --sice-reference: #D1C2B0;
+    --sice-density: #6B0B0B;
+  }
+
+  body {
+    @apply transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100;
+    background: var(--sice-bg);
+    color: var(--sice-text);
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/95 dark:bg-slate-900/95 dark:border-white/10 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05)] dark:shadow-none;
+    border: 1px solid rgba(209, 194, 176, 0.75);
+    backdrop-filter: blur(24px);
+    border-radius: 2rem;
+  }
+
+  .chart-container-card {
+    @apply bg-white dark:bg-slate-900 dark:border-white/10 shadow-sm dark:shadow-none;
+    border: 1px solid rgba(209, 194, 176, 0.7);
+    border-radius: 2rem;
+    padding: 2rem;
+    height: 100%;
+    transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+  }
+
+  .chart-container-card:hover {
+    transform: translateY(-4px);
+  }
+
+  .map-container {
+    height: 450px;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+  }
+
+  .map-container.full {
+    height: 100%;
+  }
+
+  /* Animations */
+  @keyframes enter {
+    from {
+      opacity: 0;
+      transform: translateY(15px) scale(0.98);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) scale(1);
+    }
+  }
+
+  .animate-enter {
+    animation: enter 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #D1C2B0;
+    border-radius: 10px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #D1A153;
+  }
+
+  .chart-scroll-container {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 12px;
+    margin-right: -12px;
+  }
+
+  /* Heatmap Cell Transition */
+  .heatmap-cell {
+    transition: background-color 0.2s ease;
+  }
+
+  /* Modal Background Overlay */
+  .modal-overlay {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    z-index: 10000;
+  }
+}
+
+@layer utilities {
+  .bg-slate-50 {
+    background-color: #F7F4EB;
+  }
+
+  .text-slate-900,
+  .text-slate-800,
+  .text-slate-700 {
+    color: #4A4741;
+  }
+
+  .border-slate-50,
+  .border-slate-100,
+  .border-slate-200 {
+    border-color: rgba(209, 194, 176, 0.65);
+  }
+
+  .hover\:bg-slate-50:hover {
+    background-color: rgba(247, 244, 235, 0.82);
+  }
+
+  .hover\:text-slate-900:hover,
+  .hover\:text-slate-800:hover,
+  .hover\:text-slate-700:hover {
+    color: #4A4741;
+  }
+
+  .bg-blue-500,
+  .bg-indigo-500,
+  .hover\:bg-blue-600:hover {
+    background-color: #9B1919;
+  }
+
+  .text-blue-700,
+  .text-blue-600,
+  .text-blue-500,
+  .text-indigo-700,
+  .text-indigo-600,
+  .text-indigo-500,
+  .hover\:text-blue-600:hover {
+    color: #9B1919;
+  }
+
+  .bg-blue-50,
+  .bg-indigo-50 {
+    background-color: rgba(155, 25, 25, 0.08);
+  }
+
+  .border-blue-100,
+  .border-indigo-100 {
+    border-color: rgba(155, 25, 25, 0.22);
+  }
+
+  .bg-amber-500,
+  .bg-amber-400,
+  .hover\:bg-amber-600:hover {
+    background-color: #D1A153;
+  }
+
+  .text-amber-700,
+  .text-amber-600,
+  .text-amber-500 {
+    color: #D1A153;
+  }
+
+  .bg-amber-50 {
+    background-color: rgba(209, 161, 83, 0.12);
+  }
+
+  .border-amber-100,
+  .border-amber-200 {
+    border-color: rgba(209, 161, 83, 0.32);
+  }
+}
+
+/* Custom Tooltip Styling */
+.recharts-default-tooltip {
+  @apply rounded-2xl dark:border-white/10 shadow-xl dark:shadow-none bg-white/95 dark:bg-slate-900/95 !important;
+  border-color: rgba(209, 194, 176, 0.75) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+/* Leaflet Overrides */
+.leaflet-container {
+  height: 100%;
+  width: 100%;
+  font-family: inherit;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+  border-radius: 1.5rem;
+  padding: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.sice-map-tooltip {
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.sice-map-tooltip::before {
+  display: none !important;
+}
+
+/* Print Styles for PDF Export */
+@media print {
+  @page {
+    size: A4;
+    margin: 11mm 10mm 13mm;
+  }
+
+  html,
+  body {
+    background: #fff !important;
+    color: #4A4741 !important;
+    font-size: 9pt !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  nav,
+  aside,
+  header,
+  footer:not(.print-block),
+  .no-print,
+  button:not(.print-only),
+  .leaflet-control-container,
+  .recharts-legend-wrapper {
+    display: none !important;
+  }
+
+  .print-block {
+    display: block !important;
+  }
+
+  .print-dashboard-report,
+  main {
+    max-width: none !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .print-report-section {
+    background: #fff !important;
+    border: 1px solid rgba(209, 194, 176, 0.85) !important;
+    border-radius: 14px !important;
+    box-shadow: none !important;
+    margin: 0 0 7mm !important;
+    padding: 7mm !important;
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+    overflow: hidden !important;
+  }
+
+  .print-report-section *,
+  .print-kpi-card,
+  .print-level-card,
+  .print-chart-card,
+  tr {
+    break-inside: avoid-page !important;
+    page-break-inside: avoid !important;
+  }
+
+  .print-hero-card {
+    padding: 7mm !important;
+    min-height: 0 !important;
+  }
+
+  .print-hero-card h2 {
+    font-size: 17pt !important;
+    color: #4A4741 !important;
+  }
+
+  .print-summary-grid {
+    display: grid !important;
+    grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+    gap: 4mm !important;
+    border: 0 !important;
+    padding: 0 !important;
+  }
+
+  .print-kpi-card {
+    border: 1px solid rgba(209, 194, 176, 0.85) !important;
+    border-radius: 12px !important;
+    padding: 5mm !important;
+    min-height: 26mm !important;
+  }
+
+  .print-level-section {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  .print-level-grid {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 4mm !important;
+  }
+
+  .print-level-card {
+    background: #F7F4EB !important;
+    border: 1px solid rgba(209, 194, 176, 0.9) !important;
+    border-radius: 12px !important;
+    padding: 5mm !important;
+    min-height: 38mm !important;
+  }
+
+  .print-chart-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 5mm !important;
+    break-before: page !important;
+    page-break-before: always !important;
+    border: 0 !important;
+    padding: 0 !important;
+  }
+
+  .print-chart-card {
+    height: 72mm !important;
+    border: 1px solid rgba(209, 194, 176, 0.85) !important;
+    border-radius: 12px !important;
+    padding: 6mm !important;
+  }
+
+  .print-table-section {
+    break-before: page !important;
+    page-break-before: always !important;
+  }
+
+  .print-table-section table {
+    font-size: 7.5pt !important;
+  }
+
+  .print-table-section th,
+  .print-table-section td {
+    padding: 3mm !important;
+  }
+
+  .rounded-3xl,
+  .rounded-\[2rem\] {
+    border-radius: 14px !important;
+  }
+
+  .text-3xl {
+    font-size: 18pt !important;
+    line-height: 1.1 !important;
+  }
+
+  .text-2xl {
+    font-size: 15pt !important;
+    line-height: 1.15 !important;
+  }
+
+  .text-lg,
+  h3 {
+    font-size: 12pt !important;
+    line-height: 1.2 !important;
+  }
+
+  p,
+  span,
+  td,
+  th {
+    line-height: 1.35 !important;
+  }
+
+  .bg-slate-50,
+  .dark .bg-slate-900,
+  .dark .bg-slate-950 {
+    background-color: #fff !important;
+  }
+
+  .dark h1,
+  .dark h2,
+  .dark h3,
+  .dark h4,
+  .dark p,
+  .dark span,
+  .dark td,
+  .dark th {
+    color: #4A4741 !important;
+  }
+}

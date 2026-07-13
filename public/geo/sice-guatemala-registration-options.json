@@ -1,0 +1,1849 @@
+{
+  "generated_from": {
+    "crosswalk": "D:\\CENESSOD\\2. ALTERNATIVA\\2. GUATEMALA\\SICE\\CRECIMIENTO\\INSUMOS\\metas_guatemala_mapeo_outputs\\crosswalk_metas_guatemala.xlsx",
+    "admin1_geojson": "D:\\CENESSOD\\2. ALTERNATIVA\\2. GUATEMALA\\SICE\\CRECIMIENTO\\INSUMOS\\metas_guatemala_mapeo_outputs\\gtm_admin1_metas.geojson",
+    "admin2_geojson": "D:\\CENESSOD\\2. ALTERNATIVA\\2. GUATEMALA\\SICE\\CRECIMIENTO\\INSUMOS\\metas_guatemala_mapeo_outputs\\gtm_admin2_metas.geojson"
+  },
+  "total_departments": 23,
+  "total_municipalities": 340,
+  "departments": [
+    {
+      "coddep": 1,
+      "department": "Guatemala",
+      "municipalities": [
+        {
+          "codmun": 14,
+          "municipality": "Amatitlán",
+          "target_nuclei": 225
+        },
+        {
+          "codmun": 6,
+          "municipality": "Chinautla",
+          "target_nuclei": 200
+        },
+        {
+          "codmun": 12,
+          "municipality": "Chuarrancho",
+          "target_nuclei": 45
+        },
+        {
+          "codmun": 13,
+          "municipality": "Fraijanes",
+          "target_nuclei": 114
+        },
+        {
+          "codmun": 8,
+          "municipality": "Mixco",
+          "target_nuclei": 933
+        },
+        {
+          "codmun": 5,
+          "municipality": "Palencia",
+          "target_nuclei": 99
+        },
+        {
+          "codmun": 17,
+          "municipality": "Petapa",
+          "target_nuclei": 257
+        },
+        {
+          "codmun": 4,
+          "municipality": "San José Del Golfo",
+          "target_nuclei": 21
+        },
+        {
+          "codmun": 3,
+          "municipality": "San José Pinula",
+          "target_nuclei": 146
+        },
+        {
+          "codmun": 10,
+          "municipality": "San Juan Sacatepéquez",
+          "target_nuclei": 354
+        },
+        {
+          "codmun": 7,
+          "municipality": "San Pedro Ayampuc",
+          "target_nuclei": 199
+        },
+        {
+          "codmun": 9,
+          "municipality": "San Pedro Sacatepéquez",
+          "target_nuclei": 109
+        },
+        {
+          "codmun": 11,
+          "municipality": "San Raimundo",
+          "target_nuclei": 63
+        },
+        {
+          "codmun": 2,
+          "municipality": "Santa Catarina Pinula",
+          "target_nuclei": 191
+        },
+        {
+          "codmun": 16,
+          "municipality": "Villa Canales",
+          "target_nuclei": 263
+        },
+        {
+          "codmun": 15,
+          "municipality": "Villa Nueva",
+          "target_nuclei": 746
+        }
+      ]
+    },
+    {
+      "coddep": 2,
+      "department": "Sacatepéquez",
+      "municipalities": [
+        {
+          "codmun": 14,
+          "municipality": "Alotenango",
+          "target_nuclei": 44.05
+        },
+        {
+          "codmun": 1,
+          "municipality": "Antigua Guatemala",
+          "target_nuclei": 135.565
+        },
+        {
+          "codmun": 12,
+          "municipality": "Ciudad Vieja",
+          "target_nuclei": 60.105
+        },
+        {
+          "codmun": 2,
+          "municipality": "Jocotenango",
+          "target_nuclei": 54.215
+        },
+        {
+          "codmun": 10,
+          "municipality": "Magdalena Milpas Altas",
+          "target_nuclei": 26.41
+        },
+        {
+          "codmun": 3,
+          "municipality": "Pastores",
+          "target_nuclei": 41.13
+        },
+        {
+          "codmun": 15,
+          "municipality": "San Antonio Aguas Calientes",
+          "target_nuclei": 27.38
+        },
+        {
+          "codmun": 7,
+          "municipality": "San Bartolomé Milpas Altas",
+          "target_nuclei": 17.87
+        },
+        {
+          "codmun": 8,
+          "municipality": "San Lucas Sacatepéquez",
+          "target_nuclei": 57.555
+        },
+        {
+          "codmun": 13,
+          "municipality": "San Miguel Dueñas",
+          "target_nuclei": 22.3
+        },
+        {
+          "codmun": 16,
+          "municipality": "Santa Catarina Barahona",
+          "target_nuclei": 15.045
+        },
+        {
+          "codmun": 9,
+          "municipality": "Santa Lucía Milpas Altas",
+          "target_nuclei": 37.545
+        },
+        {
+          "codmun": 11,
+          "municipality": "Santa María De Jesús",
+          "target_nuclei": 38.14
+        },
+        {
+          "codmun": 6,
+          "municipality": "Santiago Sacatepéquez",
+          "target_nuclei": 54.15
+        },
+        {
+          "codmun": 5,
+          "municipality": "Santo Domingo Xenacoj",
+          "target_nuclei": 30.79
+        },
+        {
+          "codmun": 4,
+          "municipality": "Sumpango",
+          "target_nuclei": 62.01
+        }
+      ]
+    },
+    {
+      "coddep": 3,
+      "department": "Chimaltenango",
+      "municipalities": [
+        {
+          "codmun": 11,
+          "municipality": "Acatenango",
+          "target_nuclei": 50.25
+        },
+        {
+          "codmun": 1,
+          "municipality": "Chimaltenango",
+          "target_nuclei": 179.725
+        },
+        {
+          "codmun": 4,
+          "municipality": "Comalapa",
+          "target_nuclei": 86.535
+        },
+        {
+          "codmun": 16,
+          "municipality": "El Tejar",
+          "target_nuclei": 47.8
+        },
+        {
+          "codmun": 14,
+          "municipality": "Parramos",
+          "target_nuclei": 35.78
+        },
+        {
+          "codmun": 9,
+          "municipality": "Patzicía",
+          "target_nuclei": 73.18
+        },
+        {
+          "codmun": 7,
+          "municipality": "Patzún",
+          "target_nuclei": 114.605
+        },
+        {
+          "codmun": 8,
+          "municipality": "Pochuta",
+          "target_nuclei": 20.49
+        },
+        {
+          "codmun": 13,
+          "municipality": "San Andrés Itzapa",
+          "target_nuclei": 55.51
+        },
+        {
+          "codmun": 2,
+          "municipality": "San José Poaquil",
+          "target_nuclei": 63.45
+        },
+        {
+          "codmun": 3,
+          "municipality": "San Martín Jilotepeque",
+          "target_nuclei": 118.33
+        },
+        {
+          "codmun": 5,
+          "municipality": "Santa Apolonia",
+          "target_nuclei": 45.09
+        },
+        {
+          "codmun": 10,
+          "municipality": "Santa Cruz Balanyá",
+          "target_nuclei": 24.125
+        },
+        {
+          "codmun": 6,
+          "municipality": "Tecpán Guatemala",
+          "target_nuclei": 115.17
+        },
+        {
+          "codmun": 12,
+          "municipality": "Yepocapa",
+          "target_nuclei": 13.965
+        },
+        {
+          "codmun": 15,
+          "municipality": "Zaragoza",
+          "target_nuclei": 46.05
+        }
+      ]
+    },
+    {
+      "coddep": 4,
+      "department": "El Progreso",
+      "municipalities": [
+        {
+          "codmun": 5,
+          "municipality": "El Jícaro",
+          "target_nuclei": 31.56
+        },
+        {
+          "codmun": 1,
+          "municipality": "Guastatoya",
+          "target_nuclei": 74.785
+        },
+        {
+          "codmun": 2,
+          "municipality": "Morazán",
+          "target_nuclei": 30.625
+        },
+        {
+          "codmun": 3,
+          "municipality": "San Agustín Acasaguastlán",
+          "target_nuclei": 84.57
+        },
+        {
+          "codmun": 8,
+          "municipality": "San Antonio La Paz",
+          "target_nuclei": 41.68
+        },
+        {
+          "codmun": 4,
+          "municipality": "San Cristóbal Acasaguastlán",
+          "target_nuclei": 19.85
+        },
+        {
+          "codmun": 7,
+          "municipality": "Sanarate",
+          "target_nuclei": 94.12
+        },
+        {
+          "codmun": 6,
+          "municipality": "Sansare",
+          "target_nuclei": 34.415
+        }
+      ]
+    },
+    {
+      "coddep": 5,
+      "department": "Escuintla",
+      "municipalities": [
+        {
+          "codmun": 1,
+          "municipality": "Escuintla",
+          "target_nuclei": 238.295
+        },
+        {
+          "codmun": 8,
+          "municipality": "Guanagazapa",
+          "target_nuclei": 50.57
+        },
+        {
+          "codmun": 10,
+          "municipality": "Iztapa",
+          "target_nuclei": 61.27
+        },
+        {
+          "codmun": 3,
+          "municipality": "La Democracia",
+          "target_nuclei": 61.63
+        },
+        {
+          "codmun": 7,
+          "municipality": "La Gomera",
+          "target_nuclei": 76.82
+        },
+        {
+          "codmun": 5,
+          "municipality": "Masagua",
+          "target_nuclei": 104.78
+        },
+        {
+          "codmun": 13,
+          "municipality": "Nueva Concepción",
+          "target_nuclei": 113.885
+        },
+        {
+          "codmun": 11,
+          "municipality": "Palín",
+          "target_nuclei": 128.85
+        },
+        {
+          "codmun": 9,
+          "municipality": "San José",
+          "target_nuclei": 124.435
+        },
+        {
+          "codmun": 12,
+          "municipality": "San Vicente Pacaya",
+          "target_nuclei": 45.84
+        },
+        {
+          "codmun": 2,
+          "municipality": "Santa Lucía Cotzumalguapa",
+          "target_nuclei": 202.62
+        },
+        {
+          "codmun": 14,
+          "municipality": "Sipacate",
+          "target_nuclei": 43.035
+        },
+        {
+          "codmun": 4,
+          "municipality": "Siquinalá",
+          "target_nuclei": 57.045
+        },
+        {
+          "codmun": 6,
+          "municipality": "Tiquisate",
+          "target_nuclei": 92.305
+        }
+      ]
+    },
+    {
+      "coddep": 6,
+      "department": "Santa Rosa",
+      "municipalities": [
+        {
+          "codmun": 2,
+          "municipality": "Barberena",
+          "target_nuclei": 111.79
+        },
+        {
+          "codmun": 4,
+          "municipality": "Casillas",
+          "target_nuclei": 39.365
+        },
+        {
+          "codmun": 8,
+          "municipality": "Chiquimulilla",
+          "target_nuclei": 116.035
+        },
+        {
+          "codmun": 1,
+          "municipality": "Cuilapa",
+          "target_nuclei": 71.925
+        },
+        {
+          "codmun": 11,
+          "municipality": "Guazacapán",
+          "target_nuclei": 43.36
+        },
+        {
+          "codmun": 14,
+          "municipality": "Nueva Santa Rosa",
+          "target_nuclei": 59.285
+        },
+        {
+          "codmun": 6,
+          "municipality": "Oratorio",
+          "target_nuclei": 47.135
+        },
+        {
+          "codmun": 13,
+          "municipality": "Pueblo Nuevo Viñas",
+          "target_nuclei": 53.1
+        },
+        {
+          "codmun": 7,
+          "municipality": "San Juan Tecuaco",
+          "target_nuclei": 29.985
+        },
+        {
+          "codmun": 5,
+          "municipality": "San Rafael Las Flores",
+          "target_nuclei": 30.89
+        },
+        {
+          "codmun": 12,
+          "municipality": "Santa Cruz Naranjo",
+          "target_nuclei": 36.84
+        },
+        {
+          "codmun": 10,
+          "municipality": "Santa María Ixhuatán",
+          "target_nuclei": 44.745
+        },
+        {
+          "codmun": 3,
+          "municipality": "Santa Rosa De Lima",
+          "target_nuclei": 40.02
+        },
+        {
+          "codmun": 9,
+          "municipality": "Taxisco",
+          "target_nuclei": 66.265
+        }
+      ]
+    },
+    {
+      "coddep": 7,
+      "department": "Sololá",
+      "municipalities": [
+        {
+          "codmun": 8,
+          "municipality": "Concepción",
+          "target_nuclei": 17.325
+        },
+        {
+          "codmun": 5,
+          "municipality": "Nahualá",
+          "target_nuclei": 175.015
+        },
+        {
+          "codmun": 10,
+          "municipality": "Panajachel",
+          "target_nuclei": 35.515
+        },
+        {
+          "codmun": 9,
+          "municipality": "San Andrés Semetabaj",
+          "target_nuclei": 29.94
+        },
+        {
+          "codmun": 12,
+          "municipality": "San Antonio Palopó",
+          "target_nuclei": 29.995
+        },
+        {
+          "codmun": 2,
+          "municipality": "San José Chacayá",
+          "target_nuclei": 12.495
+        },
+        {
+          "codmun": 17,
+          "municipality": "San Juan La Laguna",
+          "target_nuclei": 36.505
+        },
+        {
+          "codmun": 13,
+          "municipality": "San Lucas Tolimán",
+          "target_nuclei": 75.11
+        },
+        {
+          "codmun": 16,
+          "municipality": "San Marcos La Laguna",
+          "target_nuclei": 8.7
+        },
+        {
+          "codmun": 15,
+          "municipality": "San Pablo La Laguna",
+          "target_nuclei": 23.085
+        },
+        {
+          "codmun": 18,
+          "municipality": "San Pedro La Laguna",
+          "target_nuclei": 36.195
+        },
+        {
+          "codmun": 6,
+          "municipality": "Santa Catarina Ixtahuacán",
+          "target_nuclei": 114.16
+        },
+        {
+          "codmun": 11,
+          "municipality": "Santa Catarina Palopó",
+          "target_nuclei": 13.395
+        },
+        {
+          "codmun": 7,
+          "municipality": "Santa Clara La Laguna",
+          "target_nuclei": 24.71
+        },
+        {
+          "codmun": 14,
+          "municipality": "Santa Cruz La Laguna",
+          "target_nuclei": 24.71
+        },
+        {
+          "codmun": 4,
+          "municipality": "Santa Lucía Utatlán",
+          "target_nuclei": 46.715
+        },
+        {
+          "codmun": 3,
+          "municipality": "Santa María Visitación",
+          "target_nuclei": 7.475
+        },
+        {
+          "codmun": 19,
+          "municipality": "Santiago Atitlán",
+          "target_nuclei": 103.68
+        },
+        {
+          "codmun": 1,
+          "municipality": "Sololá",
+          "target_nuclei": 184.83
+        }
+      ]
+    },
+    {
+      "coddep": 8,
+      "department": "Totonicapán",
+      "municipalities": [
+        {
+          "codmun": 5,
+          "municipality": "Momostenango",
+          "target_nuclei": 128.275
+        },
+        {
+          "codmun": 4,
+          "municipality": "San Andrés Xecul",
+          "target_nuclei": 68.98
+        },
+        {
+          "codmun": 8,
+          "municipality": "San Bartolo",
+          "target_nuclei": 22.615
+        },
+        {
+          "codmun": 2,
+          "municipality": "San Cristóbal Totonicapán",
+          "target_nuclei": 69.52
+        },
+        {
+          "codmun": 3,
+          "municipality": "San Francisco El Alto",
+          "target_nuclei": 104.82
+        },
+        {
+          "codmun": 7,
+          "municipality": "Santa Lucía La Reforma",
+          "target_nuclei": 40.93
+        },
+        {
+          "codmun": 6,
+          "municipality": "Santa María Chiquimula",
+          "target_nuclei": 78.535
+        },
+        {
+          "codmun": 1,
+          "municipality": "Totonicapán",
+          "target_nuclei": 194.67
+        }
+      ]
+    },
+    {
+      "coddep": 9,
+      "department": "Quetzaltenango",
+      "municipalities": [
+        {
+          "codmun": 13,
+          "municipality": "Almolonga",
+          "target_nuclei": 52.33
+        },
+        {
+          "codmun": 6,
+          "municipality": "Cabricán",
+          "target_nuclei": 48.98
+        },
+        {
+          "codmun": 7,
+          "municipality": "Cajolá",
+          "target_nuclei": 28.14
+        },
+        {
+          "codmun": 14,
+          "municipality": "Cantel",
+          "target_nuclei": 77.06
+        },
+        {
+          "codmun": 20,
+          "municipality": "Coatepeque",
+          "target_nuclei": 159.38
+        },
+        {
+          "codmun": 17,
+          "municipality": "Colomba",
+          "target_nuclei": 84.995
+        },
+        {
+          "codmun": 11,
+          "municipality": "Concepción Chiquirichapa",
+          "target_nuclei": 25.54
+        },
+        {
+          "codmun": 19,
+          "municipality": "El Palmar",
+          "target_nuclei": 59.325
+        },
+        {
+          "codmun": 22,
+          "municipality": "Flores Costa Cuca",
+          "target_nuclei": 44.415
+        },
+        {
+          "codmun": 21,
+          "municipality": "Génova",
+          "target_nuclei": 74.155
+        },
+        {
+          "codmun": 15,
+          "municipality": "Huitán",
+          "target_nuclei": 23.27
+        },
+        {
+          "codmun": 23,
+          "municipality": "La Esperanza",
+          "target_nuclei": 40.615
+        },
+        {
+          "codmun": 3,
+          "municipality": "Olintepeque",
+          "target_nuclei": 49.255
+        },
+        {
+          "codmun": 9,
+          "municipality": "Ostuncalco",
+          "target_nuclei": 96.575
+        },
+        {
+          "codmun": 24,
+          "municipality": "Palestina De Los Altos",
+          "target_nuclei": 28.645
+        },
+        {
+          "codmun": 1,
+          "municipality": "Quetzaltenango",
+          "target_nuclei": 354.335
+        },
+        {
+          "codmun": 2,
+          "municipality": "Salcajá",
+          "target_nuclei": 44.335
+        },
+        {
+          "codmun": 4,
+          "municipality": "San Carlos Sija",
+          "target_nuclei": 38.16
+        },
+        {
+          "codmun": 18,
+          "municipality": "San Francisco La Unión",
+          "target_nuclei": 15.27
+        },
+        {
+          "codmun": 12,
+          "municipality": "San Martín Sacatepéquez",
+          "target_nuclei": 57.565
+        },
+        {
+          "codmun": 10,
+          "municipality": "San Mateo",
+          "target_nuclei": 20.33
+        },
+        {
+          "codmun": 8,
+          "municipality": "San Miguel Sigüilá",
+          "target_nuclei": 17.215
+        },
+        {
+          "codmun": 5,
+          "municipality": "Sibilia",
+          "target_nuclei": 18.98
+        },
+        {
+          "codmun": 16,
+          "municipality": "Zunil",
+          "target_nuclei": 39.945
+        }
+      ]
+    },
+    {
+      "coddep": 10,
+      "department": "Suchitepéquez",
+      "municipalities": [
+        {
+          "codmun": 13,
+          "municipality": "Chicacao",
+          "target_nuclei": 98.77
+        },
+        {
+          "codmun": 2,
+          "municipality": "Cuyotenango",
+          "target_nuclei": 56.19
+        },
+        {
+          "codmun": 1,
+          "municipality": "Mazatenango",
+          "target_nuclei": 127.11
+        },
+        {
+          "codmun": 14,
+          "municipality": "Patulul",
+          "target_nuclei": 68.76
+        },
+        {
+          "codmun": 19,
+          "municipality": "Pueblo Nuevo",
+          "target_nuclei": 29.345
+        },
+        {
+          "codmun": 20,
+          "municipality": "Río Bravo",
+          "target_nuclei": 54.36
+        },
+        {
+          "codmun": 8,
+          "municipality": "Samayac",
+          "target_nuclei": 43.805
+        },
+        {
+          "codmun": 10,
+          "municipality": "San Antonio Suchitepéquez",
+          "target_nuclei": 88.475
+        },
+        {
+          "codmun": 4,
+          "municipality": "San Bernardino",
+          "target_nuclei": 32.475
+        },
+        {
+          "codmun": 3,
+          "municipality": "San Francisco Zapotitlán",
+          "target_nuclei": 58.635
+        },
+        {
+          "codmun": 12,
+          "municipality": "San Gabriel",
+          "target_nuclei": 26.385
+        },
+        {
+          "codmun": 5,
+          "municipality": "San José El Ídolo",
+          "target_nuclei": 24.635
+        },
+        {
+          "codmun": 21,
+          "municipality": "San José La Máquina",
+          "target_nuclei": 42.84
+        },
+        {
+          "codmun": 16,
+          "municipality": "San Juan Bautista",
+          "target_nuclei": 19.355
+        },
+        {
+          "codmun": 7,
+          "municipality": "San Lorenzo",
+          "target_nuclei": 31.44
+        },
+        {
+          "codmun": 11,
+          "municipality": "San Miguel Panán",
+          "target_nuclei": 30.31
+        },
+        {
+          "codmun": 9,
+          "municipality": "San Pablo Jocopilas",
+          "target_nuclei": 43.67
+        },
+        {
+          "codmun": 15,
+          "municipality": "Santa Bárbara",
+          "target_nuclei": 55.94
+        },
+        {
+          "codmun": 6,
+          "municipality": "Santo Domingo Suchitepéquez",
+          "target_nuclei": 55.395
+        },
+        {
+          "codmun": 17,
+          "municipality": "Santo Tomás La Unión",
+          "target_nuclei": 31.52
+        },
+        {
+          "codmun": 18,
+          "municipality": "Zunilito",
+          "target_nuclei": 29.65
+        }
+      ]
+    },
+    {
+      "coddep": 11,
+      "department": "Retalhuleu",
+      "municipalities": [
+        {
+          "codmun": 7,
+          "municipality": "Champerico",
+          "target_nuclei": 63.665
+        },
+        {
+          "codmun": 9,
+          "municipality": "El Asintal",
+          "target_nuclei": 70.73
+        },
+        {
+          "codmun": 8,
+          "municipality": "Nuevo San Carlos",
+          "target_nuclei": 57.115
+        },
+        {
+          "codmun": 1,
+          "municipality": "Retalhuleu",
+          "target_nuclei": 176.485
+        },
+        {
+          "codmun": 6,
+          "municipality": "San Andrés Villa Seca",
+          "target_nuclei": 68.355
+        },
+        {
+          "codmun": 5,
+          "municipality": "San Felipe",
+          "target_nuclei": 51.535
+        },
+        {
+          "codmun": 4,
+          "municipality": "San Martín Zapotitlán",
+          "target_nuclei": 35.48
+        },
+        {
+          "codmun": 2,
+          "municipality": "San Sebastián",
+          "target_nuclei": 57.805
+        },
+        {
+          "codmun": 3,
+          "municipality": "Santa Cruz Muluá",
+          "target_nuclei": 30.395
+        }
+      ]
+    },
+    {
+      "coddep": 12,
+      "department": "San Marcos",
+      "municipalities": [
+        {
+          "codmun": 17,
+          "municipality": "Ayutla",
+          "target_nuclei": 56.89
+        },
+        {
+          "codmun": 16,
+          "municipality": "Catarina",
+          "target_nuclei": 64.515
+        },
+        {
+          "codmun": 4,
+          "municipality": "Comitancillo",
+          "target_nuclei": 89.17
+        },
+        {
+          "codmun": 6,
+          "municipality": "Concepción Tutuapa",
+          "target_nuclei": 93.605
+        },
+        {
+          "codmun": 20,
+          "municipality": "El Quetzal",
+          "target_nuclei": 40.06
+        },
+        {
+          "codmun": 14,
+          "municipality": "El Rodeo",
+          "target_nuclei": 33.005
+        },
+        {
+          "codmun": 13,
+          "municipality": "El Tumbador",
+          "target_nuclei": 69.955
+        },
+        {
+          "codmun": 27,
+          "municipality": "Esquipulas Palo Gordo",
+          "target_nuclei": 30.89
+        },
+        {
+          "codmun": 23,
+          "municipality": "Ixchiguán",
+          "target_nuclei": 26.315
+        },
+        {
+          "codmun": 30,
+          "municipality": "La Blanca",
+          "target_nuclei": 54.23
+        },
+        {
+          "codmun": 21,
+          "municipality": "La Reforma",
+          "target_nuclei": 40.79
+        },
+        {
+          "codmun": 15,
+          "municipality": "Malacatán",
+          "target_nuclei": 150.72
+        },
+        {
+          "codmun": 12,
+          "municipality": "Nuevo Progreso",
+          "target_nuclei": 49.425
+        },
+        {
+          "codmun": 18,
+          "municipality": "Ocós",
+          "target_nuclei": 26.515
+        },
+        {
+          "codmun": 22,
+          "municipality": "Pajapita",
+          "target_nuclei": 49.465
+        },
+        {
+          "codmun": 28,
+          "municipality": "Río Blanco",
+          "target_nuclei": 13.39
+        },
+        {
+          "codmun": 3,
+          "municipality": "San Antonio Sacatepéquez",
+          "target_nuclei": 29.1
+        },
+        {
+          "codmun": 25,
+          "municipality": "San Cristóbal Cucho",
+          "target_nuclei": 33.78
+        },
+        {
+          "codmun": 24,
+          "municipality": "San José Ojetenam",
+          "target_nuclei": 34.68
+        },
+        {
+          "codmun": 29,
+          "municipality": "San Lorenzo",
+          "target_nuclei": 28.785
+        },
+        {
+          "codmun": 1,
+          "municipality": "San Marcos",
+          "target_nuclei": 94.245
+        },
+        {
+          "codmun": 5,
+          "municipality": "San Miguel Ixtahuacán",
+          "target_nuclei": 83.6
+        },
+        {
+          "codmun": 19,
+          "municipality": "San Pablo",
+          "target_nuclei": 83.335
+        },
+        {
+          "codmun": 2,
+          "municipality": "San Pedro Sacatepéquez",
+          "target_nuclei": 125.26
+        },
+        {
+          "codmun": 11,
+          "municipality": "San Rafael Pie De La Cuesta",
+          "target_nuclei": 47.325
+        },
+        {
+          "codmun": 8,
+          "municipality": "Sibinal",
+          "target_nuclei": 31.555
+        },
+        {
+          "codmun": 26,
+          "municipality": "Sipacapa",
+          "target_nuclei": 34.995
+        },
+        {
+          "codmun": 7,
+          "municipality": "Tacaná",
+          "target_nuclei": 87.12
+        },
+        {
+          "codmun": 9,
+          "municipality": "Tajumulco",
+          "target_nuclei": 66.225
+        },
+        {
+          "codmun": 10,
+          "municipality": "Tejutla",
+          "target_nuclei": 45.905
+        }
+      ]
+    },
+    {
+      "coddep": 13,
+      "department": "Huehuetenango",
+      "municipalities": [
+        {
+          "codmun": 27,
+          "municipality": "Aguacatán",
+          "target_nuclei": 75.515
+        },
+        {
+          "codmun": 26,
+          "municipality": "Barillas",
+          "target_nuclei": 126.885
+        },
+        {
+          "codmun": 2,
+          "municipality": "Chiantla",
+          "target_nuclei": 105.135
+        },
+        {
+          "codmun": 19,
+          "municipality": "Colotenango",
+          "target_nuclei": 61.89
+        },
+        {
+          "codmun": 22,
+          "municipality": "Concepción Huista",
+          "target_nuclei": 34.57
+        },
+        {
+          "codmun": 4,
+          "municipality": "Cuilco",
+          "target_nuclei": 59.885
+        },
+        {
+          "codmun": 1,
+          "municipality": "Huehuetenango",
+          "target_nuclei": 196.495
+        },
+        {
+          "codmun": 9,
+          "municipality": "Ixtahuacán",
+          "target_nuclei": 82.235
+        },
+        {
+          "codmun": 7,
+          "municipality": "Jacaltenango",
+          "target_nuclei": 71.855
+        },
+        {
+          "codmun": 12,
+          "municipality": "La Democracia",
+          "target_nuclei": 73.69
+        },
+        {
+          "codmun": 11,
+          "municipality": "La Libertad",
+          "target_nuclei": 55.92
+        },
+        {
+          "codmun": 3,
+          "municipality": "Malacatancito",
+          "target_nuclei": 34.89
+        },
+        {
+          "codmun": 5,
+          "municipality": "Nentón",
+          "target_nuclei": 81.425
+        },
+        {
+          "codmun": 33,
+          "municipality": "Petatán",
+          "target_nuclei": 12.05
+        },
+        {
+          "codmun": 24,
+          "municipality": "San Antonio Huista",
+          "target_nuclei": 30.32
+        },
+        {
+          "codmun": 29,
+          "municipality": "San Gaspar Ixchil",
+          "target_nuclei": 17.615
+        },
+        {
+          "codmun": 16,
+          "municipality": "San Juan Atitán",
+          "target_nuclei": 54.295
+        },
+        {
+          "codmun": 23,
+          "municipality": "San Juan Ixcoy",
+          "target_nuclei": 31.37
+        },
+        {
+          "codmun": 18,
+          "municipality": "San Mateo Ixtatán",
+          "target_nuclei": 79.26
+        },
+        {
+          "codmun": 13,
+          "municipality": "San Miguel Acatán",
+          "target_nuclei": 50.185
+        },
+        {
+          "codmun": 6,
+          "municipality": "San Pedro Necta",
+          "target_nuclei": 64.565
+        },
+        {
+          "codmun": 14,
+          "municipality": "San Rafael La Independencia",
+          "target_nuclei": 31.945
+        },
+        {
+          "codmun": 28,
+          "municipality": "San Rafael Petzal",
+          "target_nuclei": 31.095
+        },
+        {
+          "codmun": 25,
+          "municipality": "San Sebastián Coatán",
+          "target_nuclei": 49.49
+        },
+        {
+          "codmun": 20,
+          "municipality": "San Sebastián Huehuetenango",
+          "target_nuclei": 77.35
+        },
+        {
+          "codmun": 31,
+          "municipality": "Santa Ana Huista",
+          "target_nuclei": 20.935
+        },
+        {
+          "codmun": 10,
+          "municipality": "Santa Bárbara",
+          "target_nuclei": 65.42
+        },
+        {
+          "codmun": 17,
+          "municipality": "Santa Eulalia",
+          "target_nuclei": 63.645
+        },
+        {
+          "codmun": 30,
+          "municipality": "Santiago Chimaltenango",
+          "target_nuclei": 27.845
+        },
+        {
+          "codmun": 8,
+          "municipality": "Soloma",
+          "target_nuclei": 61.175
+        },
+        {
+          "codmun": 21,
+          "municipality": "Tectitán",
+          "target_nuclei": 23.275
+        },
+        {
+          "codmun": 15,
+          "municipality": "Todos Santos Cuchumatán",
+          "target_nuclei": 60.97
+        },
+        {
+          "codmun": 32,
+          "municipality": "Unión Cantinil",
+          "target_nuclei": 19.405
+        }
+      ]
+    },
+    {
+      "coddep": 14,
+      "department": "Quiché",
+      "municipalities": [
+        {
+          "codmun": 18,
+          "municipality": "Canillá",
+          "target_nuclei": 24.86
+        },
+        {
+          "codmun": 5,
+          "municipality": "Chajul",
+          "target_nuclei": 127.3
+        },
+        {
+          "codmun": 19,
+          "municipality": "Chicamán",
+          "target_nuclei": 63.23
+        },
+        {
+          "codmun": 2,
+          "municipality": "Chiché",
+          "target_nuclei": 47.26
+        },
+        {
+          "codmun": 6,
+          "municipality": "Chichicastenango",
+          "target_nuclei": 247.685
+        },
+        {
+          "codmun": 3,
+          "municipality": "Chinique",
+          "target_nuclei": 25.625
+        },
+        {
+          "codmun": 10,
+          "municipality": "Cunén",
+          "target_nuclei": 73.515
+        },
+        {
+          "codmun": 20,
+          "municipality": "Ixcán",
+          "target_nuclei": 111.13
+        },
+        {
+          "codmun": 12,
+          "municipality": "Joyabaj",
+          "target_nuclei": 125.2
+        },
+        {
+          "codmun": 13,
+          "municipality": "Nebaj",
+          "target_nuclei": 145.705
+        },
+        {
+          "codmun": 21,
+          "municipality": "Pachalum",
+          "target_nuclei": 22.915
+        },
+        {
+          "codmun": 7,
+          "municipality": "Patzité",
+          "target_nuclei": 15.99
+        },
+        {
+          "codmun": 16,
+          "municipality": "Sacapulas",
+          "target_nuclei": 96.9
+        },
+        {
+          "codmun": 14,
+          "municipality": "San Andrés Sajcabajá",
+          "target_nuclei": 48.31
+        },
+        {
+          "codmun": 8,
+          "municipality": "San Antonio Ilotenango",
+          "target_nuclei": 64.55
+        },
+        {
+          "codmun": 17,
+          "municipality": "San Bartolomé Jocotenango",
+          "target_nuclei": 16.84
+        },
+        {
+          "codmun": 11,
+          "municipality": "San Juan Cotzal",
+          "target_nuclei": 72.11
+        },
+        {
+          "codmun": 9,
+          "municipality": "San Pedro Jocopilas",
+          "target_nuclei": 64.835
+        },
+        {
+          "codmun": 1,
+          "municipality": "Santa Cruz Del Quiché",
+          "target_nuclei": 152.39
+        },
+        {
+          "codmun": 15,
+          "municipality": "Uspantán",
+          "target_nuclei": 99.66
+        },
+        {
+          "codmun": 4,
+          "municipality": "Zacualpa",
+          "target_nuclei": 78.455
+        }
+      ]
+    },
+    {
+      "coddep": 15,
+      "department": "Baja Verapaz",
+      "municipalities": [
+        {
+          "codmun": 4,
+          "municipality": "Cubulco",
+          "target_nuclei": 92.41
+        },
+        {
+          "codmun": 6,
+          "municipality": "El Chol",
+          "target_nuclei": 24.595
+        },
+        {
+          "codmun": 5,
+          "municipality": "Granados",
+          "target_nuclei": 35.885
+        },
+        {
+          "codmun": 8,
+          "municipality": "Purulhá",
+          "target_nuclei": 99.305
+        },
+        {
+          "codmun": 3,
+          "municipality": "Rabinal",
+          "target_nuclei": 69.035
+        },
+        {
+          "codmun": 1,
+          "municipality": "Salamá",
+          "target_nuclei": 106.495
+        },
+        {
+          "codmun": 7,
+          "municipality": "San Jerónimo",
+          "target_nuclei": 42.11
+        },
+        {
+          "codmun": 2,
+          "municipality": "San Miguel Chicaj",
+          "target_nuclei": 61.385
+        }
+      ]
+    },
+    {
+      "coddep": 16,
+      "department": "Alta Verapaz",
+      "municipalities": [
+        {
+          "codmun": 12,
+          "municipality": "Cahabón",
+          "target_nuclei": 142
+        },
+        {
+          "codmun": 14,
+          "municipality": "Chahal",
+          "target_nuclei": 48
+        },
+        {
+          "codmun": 13,
+          "municipality": "Chisec",
+          "target_nuclei": 159
+        },
+        {
+          "codmun": 1,
+          "municipality": "Cobán",
+          "target_nuclei": 340
+        },
+        {
+          "codmun": 15,
+          "municipality": "Fray Bartolomé De Las Casas",
+          "target_nuclei": 84
+        },
+        {
+          "codmun": 11,
+          "municipality": "Lanquín",
+          "target_nuclei": 56
+        },
+        {
+          "codmun": 7,
+          "municipality": "Panzós",
+          "target_nuclei": 116
+        },
+        {
+          "codmun": 17,
+          "municipality": "Raxruhá",
+          "target_nuclei": 53
+        },
+        {
+          "codmun": 3,
+          "municipality": "San Cristóbal Verapaz",
+          "target_nuclei": 130
+        },
+        {
+          "codmun": 10,
+          "municipality": "San Juan Chamelco",
+          "target_nuclei": 124
+        },
+        {
+          "codmun": 9,
+          "municipality": "San Pedro Carchá",
+          "target_nuclei": 342
+        },
+        {
+          "codmun": 16,
+          "municipality": "Santa Catalina La Tinta",
+          "target_nuclei": 83
+        },
+        {
+          "codmun": 2,
+          "municipality": "Santa Cruz Verapaz",
+          "target_nuclei": 62
+        },
+        {
+          "codmun": 8,
+          "municipality": "Senahú",
+          "target_nuclei": 159
+        },
+        {
+          "codmun": 4,
+          "municipality": "Tactic",
+          "target_nuclei": 75
+        },
+        {
+          "codmun": 5,
+          "municipality": "Tamahú",
+          "target_nuclei": 47
+        },
+        {
+          "codmun": 6,
+          "municipality": "Tucurú",
+          "target_nuclei": 90
+        }
+      ]
+    },
+    {
+      "coddep": 17,
+      "department": "Petén",
+      "municipalities": [
+        {
+          "codmun": 8,
+          "municipality": "Dolores",
+          "target_nuclei": 46.52
+        },
+        {
+          "codmun": 14,
+          "municipality": "El Chal",
+          "target_nuclei": 21.905
+        },
+        {
+          "codmun": 1,
+          "municipality": "Flores",
+          "target_nuclei": 70
+        },
+        {
+          "codmun": 5,
+          "municipality": "La Libertad",
+          "target_nuclei": 93.03
+        },
+        {
+          "codmun": 13,
+          "municipality": "Las Cruces",
+          "target_nuclei": 46.975
+        },
+        {
+          "codmun": 11,
+          "municipality": "Melchor De Mencos",
+          "target_nuclei": 52.185
+        },
+        {
+          "codmun": 12,
+          "municipality": "Poptún",
+          "target_nuclei": 89.65
+        },
+        {
+          "codmun": 4,
+          "municipality": "San Andrés",
+          "target_nuclei": 45.68
+        },
+        {
+          "codmun": 3,
+          "municipality": "San Benito",
+          "target_nuclei": 97.56
+        },
+        {
+          "codmun": 6,
+          "municipality": "San Francisco",
+          "target_nuclei": 36.645
+        },
+        {
+          "codmun": 2,
+          "municipality": "San José",
+          "target_nuclei": 19.455
+        },
+        {
+          "codmun": 9,
+          "municipality": "San Luis",
+          "target_nuclei": 92.125
+        },
+        {
+          "codmun": 7,
+          "municipality": "Santa Ana",
+          "target_nuclei": 51.985
+        },
+        {
+          "codmun": 10,
+          "municipality": "Sayaxché",
+          "target_nuclei": 107.995
+        }
+      ]
+    },
+    {
+      "coddep": 18,
+      "department": "Izabal",
+      "municipalities": [
+        {
+          "codmun": 3,
+          "municipality": "El Estor",
+          "target_nuclei": 136.68
+        },
+        {
+          "codmun": 2,
+          "municipality": "Lívingston",
+          "target_nuclei": 125.845
+        },
+        {
+          "codmun": 5,
+          "municipality": "Los Amates",
+          "target_nuclei": 96.215
+        },
+        {
+          "codmun": 4,
+          "municipality": "Morales",
+          "target_nuclei": 171.665
+        },
+        {
+          "codmun": 1,
+          "municipality": "Puerto Barrios",
+          "target_nuclei": 183.085
+        }
+      ]
+    },
+    {
+      "coddep": 19,
+      "department": "Zacapa",
+      "municipalities": [
+        {
+          "codmun": 7,
+          "municipality": "Cabañas",
+          "target_nuclei": 33.975
+        },
+        {
+          "codmun": 2,
+          "municipality": "Estanzuela",
+          "target_nuclei": 32.4
+        },
+        {
+          "codmun": 4,
+          "municipality": "Gualán",
+          "target_nuclei": 93.355
+        },
+        {
+          "codmun": 10,
+          "municipality": "Huité",
+          "target_nuclei": 26.78
+        },
+        {
+          "codmun": 9,
+          "municipality": "La Unión",
+          "target_nuclei": 63.145
+        },
+        {
+          "codmun": 3,
+          "municipality": "Río Hondo",
+          "target_nuclei": 50.915
+        },
+        {
+          "codmun": 8,
+          "municipality": "San Diego",
+          "target_nuclei": 21.085
+        },
+        {
+          "codmun": 11,
+          "municipality": "San Jorge",
+          "target_nuclei": 29.71
+        },
+        {
+          "codmun": 5,
+          "municipality": "Teculután",
+          "target_nuclei": 43.44
+        },
+        {
+          "codmun": 6,
+          "municipality": "Usumatlán",
+          "target_nuclei": 29.7
+        },
+        {
+          "codmun": 1,
+          "municipality": "Zacapa",
+          "target_nuclei": 112.81
+        }
+      ]
+    },
+    {
+      "coddep": 20,
+      "department": "Chiquimula",
+      "municipalities": [
+        {
+          "codmun": 5,
+          "municipality": "Camotán",
+          "target_nuclei": 103.795
+        },
+        {
+          "codmun": 1,
+          "municipality": "Chiquimula",
+          "target_nuclei": 159.665
+        },
+        {
+          "codmun": 8,
+          "municipality": "Concepción Las Minas",
+          "target_nuclei": 28.825
+        },
+        {
+          "codmun": 7,
+          "municipality": "Esquipulas",
+          "target_nuclei": 90.355
+        },
+        {
+          "codmun": 11,
+          "municipality": "Ipala",
+          "target_nuclei": 45.6
+        },
+        {
+          "codmun": 4,
+          "municipality": "Jocotán",
+          "target_nuclei": 110.73
+        },
+        {
+          "codmun": 6,
+          "municipality": "Olopa",
+          "target_nuclei": 54.69
+        },
+        {
+          "codmun": 9,
+          "municipality": "Quezaltepeque",
+          "target_nuclei": 76.09
+        },
+        {
+          "codmun": 10,
+          "municipality": "San Jacinto",
+          "target_nuclei": 32.45
+        },
+        {
+          "codmun": 2,
+          "municipality": "San José La Arada",
+          "target_nuclei": 25.505
+        },
+        {
+          "codmun": 3,
+          "municipality": "San Juan Ermita",
+          "target_nuclei": 37.63
+        }
+      ]
+    },
+    {
+      "coddep": 21,
+      "department": "Jalapa",
+      "municipalities": [
+        {
+          "codmun": 1,
+          "municipality": "Jalapa",
+          "target_nuclei": 209.24
+        },
+        {
+          "codmun": 7,
+          "municipality": "Mataquescuintla",
+          "target_nuclei": 62.19
+        },
+        {
+          "codmun": 6,
+          "municipality": "Monjas",
+          "target_nuclei": 63.085
+        },
+        {
+          "codmun": 5,
+          "municipality": "San Carlos Alzatate",
+          "target_nuclei": 46.005
+        },
+        {
+          "codmun": 3,
+          "municipality": "San Luis Jilotepeque",
+          "target_nuclei": 60.675
+        },
+        {
+          "codmun": 4,
+          "municipality": "San Manuel Chaparrón",
+          "target_nuclei": 23.965
+        },
+        {
+          "codmun": 2,
+          "municipality": "San Pedro Pinula",
+          "target_nuclei": 82.095
+        }
+      ]
+    },
+    {
+      "coddep": 22,
+      "department": "Jutiapa",
+      "municipalities": [
+        {
+          "codmun": 4,
+          "municipality": "Agua Blanca",
+          "target_nuclei": 41.59
+        },
+        {
+          "codmun": 5,
+          "municipality": "Asunción Mita",
+          "target_nuclei": 91.335
+        },
+        {
+          "codmun": 7,
+          "municipality": "Atescatempa",
+          "target_nuclei": 51.52
+        },
+        {
+          "codmun": 11,
+          "municipality": "Comapa",
+          "target_nuclei": 73.61
+        },
+        {
+          "codmun": 13,
+          "municipality": "Conguaco",
+          "target_nuclei": 53.81
+        },
+        {
+          "codmun": 9,
+          "municipality": "El Adelanto",
+          "target_nuclei": 20.965
+        },
+        {
+          "codmun": 2,
+          "municipality": "El Progreso",
+          "target_nuclei": 52.81
+        },
+        {
+          "codmun": 12,
+          "municipality": "Jalpatagua",
+          "target_nuclei": 65.215
+        },
+        {
+          "codmun": 8,
+          "municipality": "Jerez",
+          "target_nuclei": 19.455
+        },
+        {
+          "codmun": 1,
+          "municipality": "Jutiapa",
+          "target_nuclei": 175.645
+        },
+        {
+          "codmun": 14,
+          "municipality": "Moyuta",
+          "target_nuclei": 80.53
+        },
+        {
+          "codmun": 15,
+          "municipality": "Pasaco",
+          "target_nuclei": 31.225
+        },
+        {
+          "codmun": 17,
+          "municipality": "Quesada",
+          "target_nuclei": 58.295
+        },
+        {
+          "codmun": 16,
+          "municipality": "San José Acatempa",
+          "target_nuclei": 34.365
+        },
+        {
+          "codmun": 3,
+          "municipality": "Santa Catarina Mita",
+          "target_nuclei": 64.535
+        },
+        {
+          "codmun": 6,
+          "municipality": "Yupiltepeque",
+          "target_nuclei": 36.02
+        },
+        {
+          "codmun": 10,
+          "municipality": "Zapotitlán",
+          "target_nuclei": 27.26
+        }
+      ]
+    },
+    {
+      "coddep": 23,
+      "department": "Guatemala (METRO)",
+      "municipalities": [
+        {
+          "codmun": 1,
+          "municipality": "Guatemala (METRO)",
+          "target_nuclei": 1596
+        }
+      ]
+    }
+  ]
+}
