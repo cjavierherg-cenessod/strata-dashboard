@@ -83,8 +83,8 @@ interface VotingMapProps {
 }
 
 const CATEGORY_COLORS = [
-  '#9B1919', '#D1A153', '#6B0B0B', '#D1C2B0', '#4A4741', '#B84A3F',
-  '#7F1D1D', '#C28B3D', '#8F7C68', '#A33A2F', '#5F5A50', '#E2D6C5',
+  '#0870A9', '#1BC4F3', '#075B8A', '#D2D3D5', '#727376', '#1299CA',
+  '#7F1D1D', '#1299CA', '#6B809B', '#A33A2F', '#5F5A50', '#E2D6C5',
 ];
 
 const createMarkerIcon = (color: string) => {
@@ -300,7 +300,7 @@ export const VotingMap: React.FC<VotingMapProps> = ({
               ) : mapMode === 'cluster' ? (
                 <MarkerClusterGroup chunkedLoading maxClusterRadius={40}>
                     {geocodedData.map((record, idx) => {
-                        const color = selectedField ? (colorMapping[String(record[selectedField] || 'Sin dato')] || '#D1C2B0') : '#9B1919';
+                        const color = selectedField ? (colorMapping[String(record[selectedField] || 'Sin dato')] || '#D2D3D5') : '#0870A9';
                         return (
                         <Marker key={idx} position={[record.latitud!, record.longitud!]} icon={createMarkerIcon(color)}>
                             <Popup closeButton={false} className="custom-popup">
@@ -312,7 +312,7 @@ export const VotingMap: React.FC<VotingMapProps> = ({
                 </MarkerClusterGroup>
               ) : (
                 geocodedData.map((record, idx) => {
-                    const color = selectedField ? (colorMapping[String(record[selectedField] || 'Sin dato')] || '#D1C2B0') : '#9B1919';
+                    const color = selectedField ? (colorMapping[String(record[selectedField] || 'Sin dato')] || '#D2D3D5') : '#0870A9';
                     return (
                         <Marker key={idx} position={[record.latitud!, record.longitud!]} icon={createMarkerIcon(color)}>
                             <Popup closeButton={false} className="custom-popup">

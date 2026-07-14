@@ -163,7 +163,7 @@ export const FieldDashboardMobileAccess: React.FC = () => {
     setError(null);
 
     try {
-      const formattedEmail = email.includes('@') ? email.trim() : `${email.trim()}@stratasph.com`;
+      const formattedEmail = email.trim().toLowerCase();
       const { error: signInError } = await supabase.auth.signInWithPassword({
         email: formattedEmail,
         password
@@ -189,7 +189,7 @@ export const FieldDashboardMobileAccess: React.FC = () => {
 
   if (selectedAccess) {
     return (
-      <div className="min-h-screen bg-[#F7F4EB]">
+      <div className="min-h-screen bg-[#FEFEFE]">
         <div className="sticky top-0 z-[1000] border-b border-[#E2D3C0] bg-white/95 px-4 py-3 backdrop-blur">
           <div className="mx-auto flex max-w-7xl items-center justify-between gap-3">
             <button
@@ -212,7 +212,7 @@ export const FieldDashboardMobileAccess: React.FC = () => {
   }
 
   return (
-    <main className="min-h-screen bg-[#F7F4EB] px-4 py-5 text-[#3f3a34]">
+    <main className="min-h-screen bg-[#FEFEFE] px-4 py-5 text-[#000000]">
       <section className="mx-auto flex min-h-[calc(100vh-2.5rem)] w-full max-w-md flex-col rounded-[2rem] border border-[#E2D3C0] bg-white p-5 shadow-[0_30px_80px_-40px_rgba(92,52,24,0.45)]">
         <div className="mb-6 flex items-center justify-between gap-3">
           <div className="flex min-w-0 items-center gap-3">
@@ -252,7 +252,8 @@ export const FieldDashboardMobileAccess: React.FC = () => {
               <div className="relative">
                 <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" size={18} />
                 <input
-                  type="text"
+                  type="email"
+                  autoComplete="email"
                   required
                   value={email}
                   onChange={event => setEmail(event.target.value)}

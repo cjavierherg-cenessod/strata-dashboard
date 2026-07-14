@@ -183,11 +183,11 @@ export const ProjectSelection: React.FC<ProjectSelectionProps> = ({
         {/* Main Menu Grid / Strategic Pillars */}
         <div className={`grid grid-cols-2 lg:grid-cols-5 gap-4 animate-enter ${activeCategory === 'crecimiento' ? 'mb-12' : 'mb-20'}`} style={{ animationDelay: '0.1s' }}>
           {[
-            { id: 'lectura', label: 'Lectura del terreno', tier: 'Básico', icon: MapIcon, color: 'text-[#9B1919]', bg: 'bg-[#9B1919]/10', hover: 'hover:border-[#9B1919]/50 hover:shadow-[#9B1919]/20', active: 'border-[#9B1919] shadow-[#9B1919]/30 ring-4 ring-[#9B1919]/10 scale-[1.02]' },
+            { id: 'lectura', label: 'Lectura del terreno', tier: 'Básico', icon: MapIcon, color: 'text-[#0870A9]', bg: 'bg-[#0870A9]/10', hover: 'hover:border-[#0870A9]/50 hover:shadow-[#0870A9]/20', active: 'border-[#0870A9] shadow-[#0870A9]/30 ring-4 ring-[#0870A9]/10 scale-[1.02]' },
             { id: 'crecimiento', label: 'Crecimiento del terreno', tier: 'Operación', icon: TrendingUp, color: 'text-[#16A34A]', bg: 'bg-[#16A34A]/10', hover: 'hover:border-[#16A34A]/50 hover:shadow-[#16A34A]/20', active: 'border-[#16A34A] shadow-[#16A34A]/30 ring-4 ring-[#16A34A]/10 scale-[1.02]' },
-            { id: 'escenarios', label: 'Modelado de escenarios', tier: 'Plus', icon: Network, color: 'text-[#6B0B0B]', bg: 'bg-[#6B0B0B]/10', hover: 'hover:border-[#6B0B0B]/50 hover:shadow-[#6B0B0B]/20', active: 'border-[#6B0B0B] shadow-[#6B0B0B]/30 ring-4 ring-[#6B0B0B]/10 scale-[1.02]' },
-            { id: 'inteligencia', label: 'Inteligencia Digital', tier: 'Premium', icon: Cpu, color: 'text-[#D1A153]', bg: 'bg-[#D1A153]/10', hover: 'hover:border-[#D1A153]/50 hover:shadow-[#D1A153]/20', active: 'border-[#D1A153] shadow-[#D1A153]/30 ring-4 ring-[#D1A153]/10 scale-[1.02]' },
-            { id: 'decisiones', label: 'Comunicación estratégica', tier: 'VIP', icon: Flag, color: 'text-[#4A4741]', bg: 'bg-[#4A4741]/10', hover: 'hover:border-[#4A4741]/50 hover:shadow-[#4A4741]/20', active: 'border-[#4A4741] shadow-[#4A4741]/30 ring-4 ring-[#4A4741]/10 scale-[1.02]' }
+            { id: 'escenarios', label: 'Modelado de escenarios', tier: 'Plus', icon: Network, color: 'text-[#6B809B]', bg: 'bg-[#6B809B]/10', hover: 'hover:border-[#6B809B]/50 hover:shadow-[#6B809B]/20', active: 'border-[#6B809B] shadow-[#6B809B]/30 ring-4 ring-[#6B809B]/10 scale-[1.02]' },
+            { id: 'inteligencia', label: 'Inteligencia Digital', tier: 'Premium', icon: Cpu, color: 'text-[#1BC4F3]', bg: 'bg-[#1BC4F3]/10', hover: 'hover:border-[#1BC4F3]/50 hover:shadow-[#1BC4F3]/20', active: 'border-[#1BC4F3] shadow-[#1BC4F3]/30 ring-4 ring-[#1BC4F3]/10 scale-[1.02]' },
+            { id: 'decisiones', label: 'Comunicación estratégica', tier: 'VIP', icon: Flag, color: 'text-[#727376]', bg: 'bg-[#727376]/10', hover: 'hover:border-[#727376]/50 hover:shadow-[#727376]/20', active: 'border-[#727376] shadow-[#727376]/30 ring-4 ring-[#727376]/10 scale-[1.02]' }
           ].map((item) => {
             const isAccessible = checkAccess(item.id);
             const isGloballyActive = globalModules.includes(item.id);
@@ -369,11 +369,11 @@ export const ProjectSelection: React.FC<ProjectSelectionProps> = ({
                     className="bg-white dark:bg-slate-900 p-6 rounded-3xl border border-slate-100 dark:border-white/10 shadow-sm"
                   >
                     <div className="flex items-start gap-4">
-                      <div className="w-12 h-12 rounded-2xl bg-[#9B1919]/10 text-[#9B1919] flex items-center justify-center shrink-0">
+                      <div className="w-12 h-12 rounded-2xl bg-[#0870A9]/10 text-[#0870A9] flex items-center justify-center shrink-0">
                         <submodule.icon size={22} />
                       </div>
                       <div>
-                        <p className="text-[10px] font-black text-[#9B1919] uppercase tracking-widest mb-2">Submódulo {index + 1}</p>
+                        <p className="text-[10px] font-black text-[#0870A9] uppercase tracking-widest mb-2">Submódulo {index + 1}</p>
                         <h3 className="text-sm font-black text-slate-900 dark:text-white uppercase tracking-widest">{submodule.title}</h3>
                         <p className="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-2 leading-relaxed">{submodule.detail}</p>
                       </div>
@@ -564,8 +564,8 @@ export const ProjectSelection: React.FC<ProjectSelectionProps> = ({
           return (
             <div className="animate-enter bg-white dark:bg-slate-900 p-16 rounded-[2rem] shadow-sm border border-slate-100 dark:border-white/10 text-center flex flex-col items-center">
               <div className={`w-20 h-20 rounded-3xl mx-auto flex items-center justify-center mb-6 
-                ${activeCategory === 'escenarios' ? 'bg-[#6B0B0B]/10 text-[#6B0B0B]' : 
-                  activeCategory === 'inteligencia' ? 'bg-[#D1A153]/10 text-[#D1A153]' : 'bg-[#9B1919]/10 text-[#9B1919]'}`}
+                ${activeCategory === 'escenarios' ? 'bg-[#6B809B]/10 text-[#6B809B]' :
+                  activeCategory === 'inteligencia' ? 'bg-[#1BC4F3]/10 text-[#0870A9]' : 'bg-[#0870A9]/10 text-[#0870A9]'}`}
               >
                 <LockIcon size={32} />
               </div>
@@ -588,7 +588,7 @@ export const ProjectSelection: React.FC<ProjectSelectionProps> = ({
             Sistema Central de Monitoreo Electoral v2026.04
           </p>
           <div className="flex items-center gap-2 mt-2 opacity-60">
-            <img src="/strata-logo.svg" alt="Strata Sphere" className="h-4 dark:invert" />
+            <img src="/strata-logo-iso.png" alt="Strata Sphere" className="h-6 w-auto" />
             <span className="text-[10px] font-black uppercase tracking-widest">BY STRATA SPHERE</span>
           </div>
         </div>

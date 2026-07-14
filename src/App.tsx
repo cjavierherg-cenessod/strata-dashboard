@@ -725,7 +725,7 @@ function App() {
                   <BarChart size={24} />
                 </div>
                 <div className="hidden sm:block">
-                  <h1 className="text-xl font-black text-[#4A4741] dark:text-white tracking-tighter uppercase leading-none">STRATA DASHBOARD</h1>
+                  <h1 className="text-xl font-black text-[#000000] dark:text-white tracking-tighter uppercase leading-none">STRATA DASHBOARD</h1>
                   <p className="text-[10px] text-slate-400 font-extrabold tracking-[0.2em] uppercase mt-1">Sistema Integrado de Control Electoral</p>
                   <div className="flex items-center gap-2 mt-1.5 opacity-60">
                     <span className="text-[9px] text-slate-400 font-black uppercase tracking-tight leading-none">by <strong className="text-slate-500">Strata Sphere</strong></span>
@@ -762,7 +762,7 @@ function App() {
               </div>
               <div className="hidden md:flex flex-col items-end text-right border-l border-slate-100 pl-6">
                 <div className="flex items-center gap-1.5 text-[10px] font-black text-slate-400 uppercase tracking-widest">
-                  <div className={`w-1.5 h-1.5 rounded-full ${isGlobalView ? 'bg-primary-600' : dataSource === 'local' ? 'bg-[#D1A153]' : 'bg-primary-600'}`} />
+                  <div className={`w-1.5 h-1.5 rounded-full ${isGlobalView ? 'bg-primary-600' : dataSource === 'local' ? 'bg-[#1BC4F3]' : 'bg-primary-600'}`} />
                   <span>{isGlobalView ? 'Fuente: STRATA Engine' : `Fuente: ${dataSource === 'google-sheets' ? 'Google Sheets' : dataSource === 'kobotoolbox' ? 'KoboToolbox' : dataSource === 'local' ? 'XLS/JSON Local' : 'API Externa'}`}</span>
                 </div>
                 <p className="text-xs text-slate-900 dark:text-slate-300 font-bold mt-0.5">{isGlobalView ? 'En Tiempo Real' : (metadata.lastUpdated || 'Agregando fuente...')}</p>
@@ -930,7 +930,7 @@ function App() {
                                   {executiveInsights.points.map((insight, index) => (
                                     <div key={`${insight.title}-${index}`} className="flex gap-3">
                                       <span className={`mt-1 h-2 w-2 rounded-full flex-none ${
-                                        insight.tone === 'success' ? 'bg-primary-600' : insight.tone === 'warning' ? 'bg-[#D1A153]' : 'bg-[#4A4741]'
+                                        insight.tone === 'success' ? 'bg-primary-600' : insight.tone === 'warning' ? 'bg-amber-500' : 'bg-[#727376]'
                                       }`} />
                                       <div>
                                         <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">{insight.title}</p>
@@ -1036,7 +1036,7 @@ function App() {
             <div className="flex items-center gap-3">
               <span className="text-slate-400 text-[10px] font-black uppercase tracking-widest">&copy; 2026 STRATA System</span>
               <div className="flex items-center gap-2 border-l border-slate-200 dark:border-slate-800 pl-3">
-                <img src="/strata-logo.svg" alt="Strata Sphere" className="h-4 dark:invert opacity-60" />
+                <img src="/strata-logo-iso.png" alt="Strata Sphere" className="h-6 w-auto opacity-70" />
                 <span className="text-slate-400 text-[10px] font-black uppercase tracking-widest">BY STRATA SPHERE</span>
               </div>
             </div>

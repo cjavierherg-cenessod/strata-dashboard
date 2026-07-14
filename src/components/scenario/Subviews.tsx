@@ -77,8 +77,8 @@ const departmentCenters: Record<string, [number, number]> = {
 
 const semaforoHex = (color?: string | null) => {
   if (color === 'VERDE') return '#10B981';
-  if (color === 'ROJO') return '#9B1919';
-  return '#D1A153';
+  if (color === 'ROJO') return '#DC2626';
+  return '#F59E0B';
 };
 
 const territoryLatLng = (row: ScenarioTerritoryResult): [number, number] => {
@@ -108,7 +108,7 @@ const ProjectionLeafletMap: React.FC<{ rows: ScenarioTerritoryResult[]; heightCl
   const visibleRows = rows.slice(0, 120);
 
   return (
-    <div className={`relative overflow-hidden rounded-3xl border border-[#D1C2B0] bg-[#F7F4EB] ${heightClassName}`}>
+    <div className={`relative overflow-hidden rounded-3xl border border-[#D2D3D5] bg-[#FEFEFE] ${heightClassName}`}>
       <MapContainer center={[15.5, -90.25]} zoom={7} scrollWheelZoom={false} zoomControl={false} className="h-full w-full z-0">
         <TileLayer attribution="&copy; CARTO" url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png" />
         <ProjectionMapBounds rows={visibleRows} />
@@ -211,15 +211,15 @@ const SensitivityExplainer: React.FC<{ result: ScenarioResult }> = ({ result }) 
 
 const semaforoClassName = (color: string) => {
   if (color === 'VERDE') return 'bg-emerald-50 text-emerald-700 border-emerald-200 dark:bg-emerald-900/20 dark:text-emerald-300 dark:border-emerald-800';
-  if (color === 'AMARILLO') return 'bg-[#D1A153]/15 text-[#8A5B12] border-[#D1A153]/40 dark:bg-[#D1A153]/20 dark:text-[#E5C482] dark:border-[#D1A153]/30';
-  return 'bg-primary-50 text-primary-700 border-primary-200 dark:bg-primary-900/20 dark:text-primary-300 dark:border-primary-800';
+  if (color === 'AMARILLO') return 'bg-amber-50 text-amber-700 border-amber-200 dark:bg-amber-900/20 dark:text-amber-300 dark:border-amber-800';
+  return 'bg-red-50 text-red-700 border-red-200 dark:bg-red-900/20 dark:text-red-300 dark:border-red-800';
 };
 
 const TerritorialRowsTable: React.FC<{ rows: ScenarioTerritorialPriorityRow[]; mode: 'score' | 'realistic' }> = ({ rows, mode }) => (
   <div className="overflow-hidden rounded-3xl border border-slate-100 dark:border-white/10 bg-white dark:bg-slate-900">
     <div className="overflow-x-auto">
       <table className="w-full min-w-[760px] text-left">
-        <thead className="bg-[#F7F4EB] dark:bg-slate-800/80">
+        <thead className="bg-[#FEFEFE] dark:bg-slate-800/80">
           <tr>
             <th className="px-4 py-3 text-[9px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Municipio</th>
             <th className="px-4 py-3 text-[9px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Semaforo</th>
@@ -230,7 +230,7 @@ const TerritorialRowsTable: React.FC<{ rows: ScenarioTerritorialPriorityRow[]; m
         </thead>
         <tbody className="divide-y divide-slate-100 dark:divide-white/10">
           {rows.map(row => (
-            <tr key={`${mode}-${row.coddep}-${row.codmun}`} className="hover:bg-[#F7F4EB]/60 dark:hover:bg-slate-800/40 transition-colors">
+            <tr key={`${mode}-${row.coddep}-${row.codmun}`} className="hover:bg-[#FEFEFE]/60 dark:hover:bg-slate-800/40 transition-colors">
               <td className="px-4 py-3">
                 <p className="text-xs font-black uppercase text-slate-900 dark:text-white">{row.municipalityName}</p>
                 <p className="text-[10px] font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">{row.departmentName}</p>
@@ -261,7 +261,7 @@ const TerritorialRowsTable: React.FC<{ rows: ScenarioTerritorialPriorityRow[]; m
 const TerritorialStrategyPanel: React.FC<{ strategy?: ScenarioTerritorialStrategySummary | null }> = ({ strategy }) => {
   if (!strategy || strategy.totalMunicipalities === 0) {
     return (
-      <div className="rounded-[2rem] border border-dashed border-[#D1C2B0] bg-[#F7F4EB] dark:bg-slate-800/40 dark:border-white/10 p-6">
+      <div className="rounded-[2rem] border border-dashed border-[#D2D3D5] bg-[#FEFEFE] dark:bg-slate-800/40 dark:border-white/10 p-6">
         <p className={labelClassName}>Capa de decision</p>
         <h3 className="mt-2 text-xl font-black uppercase text-slate-900 dark:text-white">Semaforo municipal pendiente</h3>
         <p className="mt-2 text-sm font-bold text-slate-600 dark:text-slate-400">
@@ -343,7 +343,7 @@ export const InputsView: React.FC<ViewProps> = ({ inputSummary, inputOptions, te
     party: '',
     coalition: '',
     block: '',
-    color: '#9B1919'
+    color: '#0870A9'
   });
   const [aggregateForm, setAggregateForm] = useState({
     surveyWaveId: '',
@@ -589,19 +589,19 @@ export const InputsView: React.FC<ViewProps> = ({ inputSummary, inputOptions, te
       </div>
 
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
-        <div className="bg-[#F7F4EB] dark:bg-slate-800/60 border border-[#D1C2B0] dark:border-white/10 rounded-3xl p-5">
+        <div className="bg-[#FEFEFE] dark:bg-slate-800/60 border border-[#D2D3D5] dark:border-white/10 rounded-3xl p-5">
           <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Ultima eleccion</p>
           <h4 className="text-sm font-black text-slate-900 dark:text-white uppercase mt-3">{inputSummary.latestElection?.name || 'Sin eleccion'}</h4>
           <p className="text-xs font-bold text-slate-600 dark:text-slate-400 mt-1">{inputSummary.latestElection?.year || 'Pendiente'}</p>
         </div>
-        <div className="bg-[#F7F4EB] dark:bg-slate-800/60 border border-[#D1C2B0] dark:border-white/10 rounded-3xl p-5">
+        <div className="bg-[#FEFEFE] dark:bg-slate-800/60 border border-[#D2D3D5] dark:border-white/10 rounded-3xl p-5">
           <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Ultima medicion de Lectura</p>
           <h4 className="text-sm font-black text-slate-900 dark:text-white uppercase mt-3">{inputSummary.latestSurveyWave?.name || 'Sin encuesta'}</h4>
           <p className="text-xs font-bold text-slate-600 dark:text-slate-400 mt-1">
             {inputSummary.latestSurveyWave ? `${inputSummary.latestSurveyWave.sampleSize} entrevistas` : 'Pendiente'}
           </p>
         </div>
-        <div className="bg-[#F7F4EB] dark:bg-slate-800/60 border border-[#D1C2B0] dark:border-white/10 rounded-3xl p-5">
+        <div className="bg-[#FEFEFE] dark:bg-slate-800/60 border border-[#D2D3D5] dark:border-white/10 rounded-3xl p-5">
           <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Ultima carga</p>
           <h4 className="text-sm font-black text-slate-900 dark:text-white uppercase mt-3">{inputSummary.latestImportReport?.fileName || 'Sin cargas'}</h4>
           <p className="text-xs font-bold text-slate-600 dark:text-slate-400 mt-1">
@@ -630,7 +630,7 @@ export const InputsView: React.FC<ViewProps> = ({ inputSummary, inputOptions, te
             </p>
           </div>
           <input className={inputClassName} value={electionForm.name} onChange={event => setElectionForm(prev => ({ ...prev, name: event.target.value }))} placeholder="Nombre de la eleccion" />
-          <div className="rounded-2xl bg-[#F7F4EB] dark:bg-slate-800/60 border border-[#D1C2B0] dark:border-white/10 p-4">
+          <div className="rounded-2xl bg-[#FEFEFE] dark:bg-slate-800/60 border border-[#D2D3D5] dark:border-white/10 p-4">
             <div className="flex items-center justify-between gap-3">
               <div>
                 <p className={labelClassName}>Tipo fijo</p>
@@ -664,16 +664,16 @@ export const InputsView: React.FC<ViewProps> = ({ inputSummary, inputOptions, te
             </p>
           </div>
           <div className="grid grid-cols-2 gap-3">
-            <div className="rounded-2xl bg-[#F7F4EB] dark:bg-slate-800/60 border border-[#D1C2B0] dark:border-white/10 p-4">
+            <div className="rounded-2xl bg-[#FEFEFE] dark:bg-slate-800/60 border border-[#D2D3D5] dark:border-white/10 p-4">
               <p className={labelClassName}>Territorios</p>
               <p className="text-2xl font-black text-slate-900 dark:text-white mt-1 tabular-nums">{inputOptions?.territories.length || 0}</p>
             </div>
-            <div className="rounded-2xl bg-[#F7F4EB] dark:bg-slate-800/60 border border-[#D1C2B0] dark:border-white/10 p-4">
+            <div className="rounded-2xl bg-[#FEFEFE] dark:bg-slate-800/60 border border-[#D2D3D5] dark:border-white/10 p-4">
               <p className={labelClassName}>Estado</p>
               <p className="text-sm font-black uppercase text-slate-900 dark:text-white mt-2">{inputOptions?.territories.length ? 'Disponible' : 'Pendiente'}</p>
             </div>
           </div>
-          <div className="rounded-2xl border border-dashed border-[#D1C2B0] dark:border-white/10 p-4">
+          <div className="rounded-2xl border border-dashed border-[#D2D3D5] dark:border-white/10 p-4">
             <p className="text-xs font-bold text-slate-600 dark:text-slate-400 leading-relaxed">
               Recomendacion: mantener esta base como catalogo global y copiar/sincronizar al proyecto activo cuando se modele una eleccion.
             </p>
@@ -739,7 +739,7 @@ export const InputsView: React.FC<ViewProps> = ({ inputSummary, inputOptions, te
                 ))}
               </div>
             ) : (
-              <div className="rounded-2xl border border-dashed border-[#D1C2B0] bg-[#F7F4EB] dark:bg-slate-800/50 dark:border-white/10 p-5">
+              <div className="rounded-2xl border border-dashed border-[#D2D3D5] bg-[#FEFEFE] dark:bg-slate-800/50 dark:border-white/10 p-5">
                 <p className="text-sm font-black text-slate-900 dark:text-white uppercase">Sin mediciones conectadas</p>
                 <p className="mt-2 text-xs font-bold text-slate-600 dark:text-slate-400 leading-relaxed">
                   Carga las olas en Lectura del Terreno. Luego Modelado debe leerlas y homologarlas, sin duplicar captura.
@@ -905,7 +905,7 @@ export const SummaryView: React.FC<ViewProps> = ({ summary, alerts, selectedScen
       )}
 
       {summary.methodNotes && summary.methodNotes.length > 0 && (
-        <div className="rounded-3xl border border-[#D1C2B0] bg-[#F7F4EB]/70 dark:bg-slate-800/50 dark:border-white/10 p-5">
+        <div className="rounded-3xl border border-[#D2D3D5] bg-[#FEFEFE]/70 dark:bg-slate-800/50 dark:border-white/10 p-5">
           <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-4">
             <div>
               <p className="text-[9px] font-black uppercase tracking-widest text-slate-500 dark:text-slate-400">Supuestos del escenario</p>
@@ -1049,7 +1049,7 @@ export const SimuladoresView: React.FC<ViewProps> = ({ summary, selectedScenario
           { label: 'Resultado simulado', value: pct(simulatedPct), note: `${numberFormatter.format(simulatedVotes)} votos`, tone: 'primary' },
           { label: 'Participacion esperada', value: pct(turnoutPct), note: `${numberFormatter.format(adjustedExpectedTotalVotes)} votos`, tone: 'slate' }
         ].map(item => (
-          <div key={item.label} className={`rounded-3xl border p-5 shadow-sm ${item.tone === 'primary' ? 'border-primary-200 bg-primary-50/70 dark:bg-primary-950/20 dark:border-primary-500/20' : item.tone === 'amber' ? 'border-[#D1A153]/40 bg-[#D1A153]/10 dark:bg-[#D1A153]/10' : 'border-slate-100 bg-white dark:bg-slate-900 dark:border-white/10'}`}>
+          <div key={item.label} className={`rounded-3xl border p-5 shadow-sm ${item.tone === 'primary' ? 'border-primary-200 bg-primary-50/70 dark:bg-primary-950/20 dark:border-primary-500/20' : item.tone === 'amber' ? 'border-amber-200 bg-amber-50/70 dark:bg-amber-950/20 dark:border-amber-800' : 'border-slate-100 bg-white dark:bg-slate-900 dark:border-white/10'}`}>
             <p className={labelClassName}>{item.label}</p>
             <p className="mt-3 text-3xl font-black text-slate-900 dark:text-white tabular-nums">{item.value}</p>
             <p className="mt-1 text-xs font-bold text-slate-500 dark:text-slate-400">{item.note}</p>
@@ -1278,7 +1278,7 @@ export const StrategicRoutesView: React.FC<ViewProps> = ({ summary, alerts }) =>
             <p className="mt-2 text-xs font-bold text-slate-500 dark:text-slate-400">{group.subtitle}</p>
             <div className="mt-5 space-y-3">
               {group.rows.map((row, index) => (
-                <div key={row.territoryId} className="rounded-2xl border border-slate-100 dark:border-white/10 bg-[#F7F4EB]/45 dark:bg-slate-800/45 p-4">
+                <div key={row.territoryId} className="rounded-2xl border border-slate-100 dark:border-white/10 bg-[#FEFEFE]/45 dark:bg-slate-800/45 p-4">
                   <div className="flex items-center justify-between gap-3">
                     <div>
                       <p className="text-[10px] font-black text-slate-500 dark:text-slate-400">0{index + 1}</p>
@@ -1341,7 +1341,7 @@ export const ExecutiveComparatorView: React.FC<ViewProps> = ({ scenarios, summar
     <div className="p-6 lg:p-8 space-y-6 animate-enter">
       <SectionHeader title="Comparador Ejecutivo" subtitle="Comparacion entre escenarios calculados." badge={`${scenarios?.length || 0} escenarios`} />
       {comparableScenarios.length < 2 && (
-        <div className="rounded-3xl border border-[#D1C2B0] bg-[#F7F4EB]/70 dark:bg-slate-800/50 dark:border-white/10 p-5">
+        <div className="rounded-3xl border border-[#D2D3D5] bg-[#FEFEFE]/70 dark:bg-slate-800/50 dark:border-white/10 p-5">
           <p className="text-sm font-black uppercase text-slate-900 dark:text-white">Linea base disponible</p>
           <p className="mt-2 text-xs font-bold text-slate-600 dark:text-slate-400">
             Para comparar se necesita un segundo escenario calculado. Mientras tanto, este panel muestra el benchmark ejecutivo del escenario activo.
@@ -1351,9 +1351,9 @@ export const ExecutiveComparatorView: React.FC<ViewProps> = ({ scenarios, summar
       {comparableScenarios.length >= 2 && (
         <div className="overflow-hidden rounded-3xl border border-slate-100 dark:border-white/10 bg-white dark:bg-slate-900 shadow-sm">
           <div className="grid grid-cols-[minmax(220px,1.2fr)_repeat(5,minmax(120px,1fr))] gap-0 overflow-x-auto">
-            <div className="px-4 py-3 bg-[#F7F4EB] text-[9px] font-black uppercase tracking-widest text-slate-500">Escenario</div>
+            <div className="px-4 py-3 bg-[#FEFEFE] text-[9px] font-black uppercase tracking-widest text-slate-500">Escenario</div>
             {['Resultado', 'Votos Nery', 'Votos meta', 'Faltan meta', 'Participacion'].map(label => (
-              <div key={label} className="px-4 py-3 bg-[#F7F4EB] text-[9px] font-black uppercase tracking-widest text-slate-500 text-right">{label}</div>
+              <div key={label} className="px-4 py-3 bg-[#FEFEFE] text-[9px] font-black uppercase tracking-widest text-slate-500 text-right">{label}</div>
             ))}
             {comparableScenarios.map(scenario => {
               const data = scenario.comparison!;

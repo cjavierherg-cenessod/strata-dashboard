@@ -53,8 +53,8 @@ export const ResponsibleAccess: React.FC<ResponsibleAccessProps> = ({ level, tok
   const expectedRole = useMemo(() => levelToRole(level), [level]);
   const isMassiveAccess = useMemo(() => isMassiveAccessLevel(level), [level]);
   const roleMatchesPath = !context || !expectedRole || context.role === expectedRole;
-  const inputClassName = 'w-full px-4 py-3.5 rounded-2xl bg-[#F7F4EB] dark:bg-slate-950 border border-[#D1C2B0] dark:border-white/10 text-base sm:text-sm font-bold text-[#4A4741] dark:text-white outline-none focus:ring-4 focus:ring-primary-500/15 focus:border-primary-500 placeholder:text-[#4A4741]/45';
-  const labelClassName = 'block text-xs font-extrabold text-[#4A4741] dark:text-slate-200 mb-2';
+  const inputClassName = 'w-full px-4 py-3.5 rounded-2xl bg-[#FEFEFE] dark:bg-slate-950 border border-[#D2D3D5] dark:border-white/10 text-base sm:text-sm font-bold text-[#727376] dark:text-white outline-none focus:ring-4 focus:ring-primary-500/15 focus:border-primary-500 placeholder:text-[#727376]/45';
+  const labelClassName = 'block text-xs font-extrabold text-[#727376] dark:text-slate-200 mb-2';
 
   useEffect(() => {
     const loadContext = async () => {
@@ -127,33 +127,33 @@ export const ResponsibleAccess: React.FC<ResponsibleAccessProps> = ({ level, tok
 
   if (loading) {
     return (
-      <div className="min-h-screen bg-[#F7F4EB] dark:bg-slate-950 flex items-center justify-center p-8">
-        <p className="text-[10px] font-black uppercase tracking-[0.25em] text-[#D1A153]">Cargando acceso...</p>
+      <div className="min-h-screen bg-[#FEFEFE] dark:bg-slate-950 flex items-center justify-center p-8">
+        <p className="text-[10px] font-black uppercase tracking-[0.25em] text-[#1BC4F3]">Cargando acceso...</p>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-[#F7F4EB] dark:bg-slate-950 flex items-center justify-center p-4 sm:p-8">
+    <div className="min-h-screen bg-[#FEFEFE] dark:bg-slate-950 flex items-center justify-center p-4 sm:p-8">
       <div className="max-w-lg w-full">
         <div className="text-center mb-8">
           <div className="w-16 h-16 rounded-2xl bg-primary-600 text-white flex items-center justify-center mx-auto mb-5 shadow-lg shadow-primary-200/40 dark:shadow-none">
             <ShieldCheck size={30} />
           </div>
-          <h1 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-[#4A4741] dark:text-white leading-tight">
+          <h1 className="text-xl sm:text-2xl font-black uppercase tracking-tight text-[#727376] dark:text-white leading-tight">
             {isMassiveAccess ? 'Acceso de Coordinadores Sectoriales NAF21' : 'Acceso de Coordinadores NAF21'}
           </h1>
-          <p className="text-[10px] font-black uppercase tracking-[0.25em] text-[#D1A153] dark:text-slate-500 mt-2">
+          <p className="text-[10px] font-black uppercase tracking-[0.25em] text-[#1BC4F3] dark:text-slate-500 mt-2">
             Crecimiento territorial
           </p>
         </div>
 
-        <div className="bg-white/95 dark:bg-slate-900 border border-[#D1C2B0] dark:border-white/10 rounded-3xl p-6 sm:p-8 shadow-[0_30px_70px_-30px_rgba(74,71,65,0.45)] dark:shadow-xl">
+        <div className="bg-white/95 dark:bg-slate-900 border border-[#D2D3D5] dark:border-white/10 rounded-3xl p-6 sm:p-8 shadow-[0_30px_70px_-30px_rgba(0,0,0,0.45)] dark:shadow-xl">
           {context && roleMatchesPath && (
             <div className="mb-6">
-              <div className="rounded-2xl bg-[#F7F4EB] dark:bg-slate-950 border border-[#D1C2B0] dark:border-white/5 p-4">
-                <p className="text-[9px] font-black uppercase tracking-widest text-[#D1A153]">Nivel</p>
-                <p className="text-sm font-black uppercase text-[#4A4741] dark:text-white mt-1">
+              <div className="rounded-2xl bg-[#FEFEFE] dark:bg-slate-950 border border-[#D2D3D5] dark:border-white/5 p-4">
+                <p className="text-[9px] font-black uppercase tracking-widest text-[#1BC4F3]">Nivel</p>
+                <p className="text-sm font-black uppercase text-[#727376] dark:text-white mt-1">
                   {ROLE_LABELS[context.role] || context.role}
                   {isMassiveAccess ? ' masivo' : ''}
                 </p>
@@ -161,7 +161,7 @@ export const ResponsibleAccess: React.FC<ResponsibleAccessProps> = ({ level, tok
                   {context.project_name}
                 </p>
                 {isMassiveAccess && context.parent_name && (
-                  <p className="text-[10px] font-bold uppercase tracking-widest text-[#4A4741]/60 dark:text-slate-400 mt-1">
+                  <p className="text-[10px] font-bold uppercase tracking-widest text-[#727376]/60 dark:text-slate-400 mt-1">
                     Tributa a: {context.parent_name}
                   </p>
                 )}
@@ -170,25 +170,25 @@ export const ResponsibleAccess: React.FC<ResponsibleAccessProps> = ({ level, tok
           )}
 
           {context && !roleMatchesPath && (
-            <div className="mb-6 rounded-2xl bg-[#D1A153]/10 dark:bg-amber-950/20 border border-[#D1A153]/40 dark:border-amber-900/40 p-4">
-              <p className="text-[11px] font-black uppercase tracking-widest text-[#6B0B0B] dark:text-amber-300">
+            <div className="mb-6 rounded-2xl bg-[#1BC4F3]/10 dark:bg-amber-950/20 border border-[#1BC4F3]/40 dark:border-amber-900/40 p-4">
+              <p className="text-[11px] font-black uppercase tracking-widest text-[#075B8A] dark:text-amber-300">
                 Este enlace pertenece a {ROLE_LABELS[context.role] || context.role}.
               </p>
             </div>
           )}
 
-          <div className="flex gap-2 p-1 bg-[#F7F4EB] dark:bg-slate-800 rounded-2xl mb-6 border border-[#D1C2B0]/60">
+          <div className="flex gap-2 p-1 bg-[#FEFEFE] dark:bg-slate-800 rounded-2xl mb-6 border border-[#D2D3D5]/60">
             <button
               type="button"
               onClick={() => setMode('login')}
-              className={`flex-1 px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${mode === 'login' ? 'bg-white dark:bg-slate-900 text-primary-600 shadow-sm ring-1 ring-[#D1C2B0]' : 'text-primary-600/45 hover:text-primary-600'}`}
+              className={`flex-1 px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${mode === 'login' ? 'bg-white dark:bg-slate-900 text-primary-600 shadow-sm ring-1 ring-[#D2D3D5]' : 'text-primary-600/45 hover:text-primary-600'}`}
             >
               Ingresar
             </button>
             <button
               type="button"
               onClick={() => setMode('setup')}
-              className={`flex-1 px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${mode === 'setup' ? 'bg-white dark:bg-slate-900 text-primary-600 shadow-sm ring-1 ring-[#D1C2B0]' : 'text-primary-600/45 hover:text-primary-600'}`}
+              className={`flex-1 px-4 py-2.5 rounded-xl text-[10px] font-black uppercase tracking-widest transition-all ${mode === 'setup' ? 'bg-white dark:bg-slate-900 text-primary-600 shadow-sm ring-1 ring-[#D2D3D5]' : 'text-primary-600/45 hover:text-primary-600'}`}
             >
               Crear clave
             </button>
@@ -226,13 +226,13 @@ export const ResponsibleAccess: React.FC<ResponsibleAccessProps> = ({ level, tok
               {mode === 'setup' ? 'Crear contraseña' : 'Contraseña'}
             </label>
             <div className="relative">
-              <KeyRound className="absolute left-4 top-1/2 -translate-y-1/2 text-[#D1A153]" size={16} />
+              <KeyRound className="absolute left-4 top-1/2 -translate-y-1/2 text-[#1BC4F3]" size={16} />
               <input
                 type="password"
                 value={password}
                 onChange={event => setPassword(event.target.value)}
                 placeholder={mode === 'setup' ? 'Crea una contraseña' : 'Contraseña'}
-                className="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-[#F7F4EB] dark:bg-slate-950 border border-[#D1C2B0] dark:border-white/10 text-sm font-bold text-[#4A4741] dark:text-white outline-none focus:ring-4 focus:ring-primary-500/15 focus:border-primary-500 placeholder:text-[#4A4741]/45"
+                className="w-full pl-11 pr-4 py-3.5 rounded-2xl bg-[#FEFEFE] dark:bg-slate-950 border border-[#D2D3D5] dark:border-white/10 text-sm font-bold text-[#727376] dark:text-white outline-none focus:ring-4 focus:ring-primary-500/15 focus:border-primary-500 placeholder:text-[#727376]/45"
               />
             </div>
 

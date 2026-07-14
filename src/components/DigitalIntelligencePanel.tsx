@@ -24,12 +24,12 @@ export const DigitalIntelligencePanel: React.FC<DigitalIntelligencePanelProps> =
       <div className="bg-white dark:bg-slate-900 p-8 rounded-[2.5rem] border border-slate-100 dark:border-white/10 shadow-sm mb-8 transition-colors">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-6">
           <div className="flex items-center gap-6">
-            <div className="bg-[#9B1919] p-4 rounded-3xl text-white shadow-lg shadow-[#9B1919]/20 ring-8 ring-[#9B1919]/5">
+            <div className="bg-[#0870A9] p-4 rounded-3xl text-white shadow-lg shadow-[#0870A9]/20 ring-8 ring-[#0870A9]/5">
               <Cpu size={32} />
             </div>
             <div>
               <div className="flex items-center gap-2 mb-1">
-                <span className="text-[10px] font-black text-[#9B1919] dark:text-[#D1A153] uppercase tracking-widest bg-[#9B1919]/10 dark:bg-[#9B1919]/20 px-2 py-0.5 rounded-lg">Pilar de Inteligencia</span>
+                <span className="text-[10px] font-black text-[#0870A9] dark:text-[#1BC4F3] uppercase tracking-widest bg-[#0870A9]/10 dark:bg-[#0870A9]/20 px-2 py-0.5 rounded-lg">Pilar de Inteligencia</span>
                 <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">-</span>
                 <span className="text-[10px] font-black text-slate-400 uppercase tracking-widest">SICE-IA</span>
               </div>
@@ -42,7 +42,7 @@ export const DigitalIntelligencePanel: React.FC<DigitalIntelligencePanelProps> =
             <button
               onClick={() => setActiveSubTab('dashboard')}
               className={`flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all ${
-                activeSubTab === 'dashboard' ? 'bg-white dark:bg-slate-800 text-[#9B1919] dark:text-[#D1A153] shadow-sm' : 'text-slate-400 hover:text-slate-600 dark:hover:text-slate-300'
+                activeSubTab === 'dashboard' ? 'bg-white dark:bg-slate-800 text-[#0870A9] dark:text-[#1BC4F3] shadow-sm' : 'text-slate-400 hover:text-slate-600 dark:hover:text-slate-300'
               }`}
             >
               <LayoutDashboard size={16} /> Dashboard
@@ -50,7 +50,7 @@ export const DigitalIntelligencePanel: React.FC<DigitalIntelligencePanelProps> =
             <button
               onClick={() => setActiveSubTab('config')}
               className={`flex items-center gap-2 px-6 py-3 rounded-xl text-xs font-black uppercase tracking-widest transition-all ${
-                activeSubTab === 'config' ? 'bg-white dark:bg-slate-800 text-[#9B1919] dark:text-[#D1A153] shadow-sm' : 'text-slate-400 hover:text-slate-600 dark:hover:text-slate-300'
+                activeSubTab === 'config' ? 'bg-white dark:bg-slate-800 text-[#0870A9] dark:text-[#1BC4F3] shadow-sm' : 'text-slate-400 hover:text-slate-600 dark:hover:text-slate-300'
               }`}
             >
               <Settings2 size={16} /> Configuracion
@@ -61,7 +61,7 @@ export const DigitalIntelligencePanel: React.FC<DigitalIntelligencePanelProps> =
 
       {loading ? (
         <div className="flex flex-col items-center justify-center py-40 bg-white/50 dark:bg-slate-900/50 rounded-[3rem] border-2 border-dashed border-slate-200 dark:border-slate-800">
-          <RefreshCw size={40} className="text-[#9B1919] dark:text-[#D1A153] animate-spin mb-6" />
+          <RefreshCw size={40} className="text-[#0870A9] dark:text-[#1BC4F3] animate-spin mb-6" />
           <p className="text-slate-400 dark:text-slate-500 font-black uppercase tracking-[0.3em] text-[10px]">Conectando con SICE-IA...</p>
         </div>
       ) : (
@@ -75,7 +75,7 @@ export const DigitalIntelligencePanel: React.FC<DigitalIntelligencePanelProps> =
           )}
           {activeSubTab === 'dashboard' && !data && (
             <div className="flex flex-col items-center justify-center py-28 px-8 text-center bg-white dark:bg-slate-900 rounded-[2.5rem] border border-slate-100 dark:border-white/10 shadow-sm">
-              <div className="bg-[#9B1919]/10 text-[#9B1919] p-4 rounded-3xl mb-6">
+              <div className="bg-[#0870A9]/10 text-[#0870A9] p-4 rounded-3xl mb-6">
                 <Cpu size={32} />
               </div>
               <h3 className="text-xl font-black text-slate-900 dark:text-white uppercase tracking-tight mb-3">SICE-IA sin datos activos</h3>
