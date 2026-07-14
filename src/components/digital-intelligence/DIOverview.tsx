@@ -192,8 +192,8 @@ export const DIOverview: React.FC<DIOverviewProps> = ({ data, selectedActorIds, 
   };
   const maxCandidateMentions = Math.max(...data.candidates.map(candidate => candidate.mentions), 1);
   const maxCandidateReach = Math.max(...data.candidates.map(candidate => candidate.reach), 1);
-  const actorColors = ['#9B1919', '#D1A153', '#6B0B0B', '#4A4741', '#D1C2B0', '#B84A3F'];
-  const channelColors = ['#9B1919', '#D1A153', '#6B0B0B', '#4A4741', '#D1C2B0', '#B84A3F', '#8F7C68', '#C28B3D'];
+  const actorColors = ['#0870A9', '#1BC4F3', '#075B8A', '#727376', '#D2D3D5', '#1299CA'];
+  const channelColors = ['#0870A9', '#1BC4F3', '#075B8A', '#727376', '#D2D3D5', '#1299CA', '#6B809B', '#1299CA'];
   const positiveColor = '#16A34A';
   const negativeColor = '#DC2626';
   const getActorColor = (index: number) => actorColors[index % actorColors.length];
@@ -284,7 +284,7 @@ export const DIOverview: React.FC<DIOverviewProps> = ({ data, selectedActorIds, 
       <div className="h-[280px]">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={chartData}>
-            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#D1C2B0" />
+            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#D2D3D5" />
             <XAxis dataKey="date" tick={{ fontSize: 10, fontWeight: 'bold', fill: '#64748b' }} tickLine={false} axisLine={false} />
             <YAxis tick={{ fontSize: 10, fill: '#64748b' }} tickFormatter={value => percent ? `${value}%` : compactNumber(Number(value))} tickLine={false} axisLine={false} />
             <Tooltip formatter={(value) => percent ? `${value}%` : compactNumber(Number(value))} />
@@ -593,22 +593,22 @@ export const DIOverview: React.FC<DIOverviewProps> = ({ data, selectedActorIds, 
                       <AreaChart data={mappedMentions}>
                         <defs>
                           <linearGradient id="colorMentionsVol" x1="0" y1="0" x2="0" y2="1">
-                            <stop offset="5%" stopColor="#9B1919" stopOpacity={0.25}/>
-                            <stop offset="95%" stopColor="#9B1919" stopOpacity={0}/>
+                            <stop offset="5%" stopColor="#0870A9" stopOpacity={0.25}/>
+                            <stop offset="95%" stopColor="#0870A9" stopOpacity={0}/>
                           </linearGradient>
                         </defs>
-                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#D1C2B0" />
+                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#D2D3D5" />
                         <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{fontSize: 10, fontWeight: 'bold', fill: '#94a3b8'}} dy={10} />
                         <YAxis axisLine={false} tickLine={false} tick={{fontSize: 10, fontWeight: 'bold', fill: '#94a3b8'}} />
                         <Tooltip contentStyle={{borderRadius: '16px', border: 'none', boxShadow: '0 10px 25px -5px rgb(0 0 0 / 0.1)', padding: '12px'}} cursor={{stroke: '#cbd5e1', strokeWidth: 1, strokeDasharray: '4 4'}} />
                         <Area 
                           type="monotone" 
                           dataKey="count" 
-                          stroke="#9B1919" 
+                          stroke="#0870A9"
                           strokeWidth={4}
                           fillOpacity={1} 
                           fill="url(#colorMentionsVol)" 
-                          activeDot={{r: 6, fill: '#9B1919', stroke: '#fff', strokeWidth: 3}}
+                          activeDot={{r: 6, fill: '#0870A9', stroke: '#fff', strokeWidth: 3}}
                         />
                       </AreaChart>
                     </ResponsiveContainer>
@@ -635,7 +635,7 @@ export const DIOverview: React.FC<DIOverviewProps> = ({ data, selectedActorIds, 
                             <stop offset={off} stopColor="#EF4444" stopOpacity={1} />
                           </linearGradient>
                         </defs>
-                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#D1C2B0" />
+                        <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#D2D3D5" />
                         <XAxis dataKey="date" axisLine={false} tickLine={false} tick={{fontSize: 10, fontWeight: 'bold', fill: '#94a3b8'}} dy={10} />
                         <YAxis axisLine={false} tickLine={false} tick={{fontSize: 10, fontWeight: 'bold', fill: '#94a3b8'}} domain={[-100, 100]} />
                         <Tooltip contentStyle={{borderRadius: '16px', border: 'none', boxShadow: '0 10px 25px -5px rgb(0 0 0 / 0.1)', padding: '12px'}} cursor={{stroke: '#cbd5e1', strokeWidth: 1, strokeDasharray: '4 4'}} />
@@ -827,7 +827,7 @@ export const DIOverview: React.FC<DIOverviewProps> = ({ data, selectedActorIds, 
                       <div className="h-[300px]">
                         <ResponsiveContainer width="100%" height="100%">
                           <BarChart data={sentimentBreakdownData}>
-                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#D1C2B0" />
+                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#D2D3D5" />
                             <XAxis dataKey="name" tick={{ fontSize: 10, fontWeight: 'bold', fill: '#64748b' }} tickLine={false} axisLine={false} />
                             <YAxis tickFormatter={value => `${value}%`} tick={{ fontSize: 10, fill: '#64748b' }} tickLine={false} axisLine={false} />
                             <Tooltip formatter={(value) => `${value}%`} />
@@ -843,7 +843,7 @@ export const DIOverview: React.FC<DIOverviewProps> = ({ data, selectedActorIds, 
                       <div className="h-[300px]">
                         <ResponsiveContainer width="100%" height="100%">
                           <BarChart data={channelData}>
-                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#D1C2B0" />
+                            <CartesianGrid strokeDasharray="3 3" vertical={false} stroke="#D2D3D5" />
                             <XAxis dataKey="name" tick={{ fontSize: 10, fontWeight: 'bold', fill: '#64748b' }} tickLine={false} axisLine={false} />
                             <YAxis tickFormatter={value => `${value}%`} tick={{ fontSize: 10, fill: '#64748b' }} tickLine={false} axisLine={false} />
                             <Tooltip formatter={(value) => `${value}%`} />

@@ -18,6 +18,7 @@ out*.html
 brand24_apiDocs.json
 *.code-workspace
 *.png
+!public/strata-logo-iso.png
 *.jpeg
 android/
 cell-dashboard/

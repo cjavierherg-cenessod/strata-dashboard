@@ -4,18 +4,19 @@
 
 @layer base {
   :root {
-    --sice-base: #9B1919;
-    --sice-bg: #F7F4EB;
-    --sice-text: #4A4741;
-    --sice-accent: #D1A153;
-    --sice-reference: #D1C2B0;
-    --sice-density: #6B0B0B;
+    --strata-black: #000000;
+    --strata-blue: #0870A9;
+    --strata-cyan: #1BC4F3;
+    --strata-steel: #6B809B;
+    --strata-gray: #727376;
+    --strata-silver: #D2D3D5;
+    --strata-white: #FEFEFE;
   }
 
   body {
     @apply transition-colors duration-300 dark:bg-slate-950 dark:text-slate-100;
-    background: var(--sice-bg);
-    color: var(--sice-text);
+    background: var(--strata-white);
+    color: var(--strata-black);
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -25,14 +26,14 @@
 @layer components {
   .glass-card {
     @apply bg-white/95 dark:bg-slate-900/95 dark:border-white/10 shadow-[0_10px_25px_-5px_rgba(0,0,0,0.05)] dark:shadow-none;
-    border: 1px solid rgba(209, 194, 176, 0.75);
+    border: 1px solid rgba(107, 128, 155, 0.35);
     backdrop-filter: blur(24px);
     border-radius: 2rem;
   }
 
   .chart-container-card {
     @apply bg-white dark:bg-slate-900 dark:border-white/10 shadow-sm dark:shadow-none;
-    border: 1px solid rgba(209, 194, 176, 0.7);
+    border: 1px solid rgba(107, 128, 155, 0.3);
     border-radius: 2rem;
     padding: 2rem;
     height: 100%;
@@ -80,12 +81,12 @@
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb {
-    background: #D1C2B0;
+    background: #6B809B;
     border-radius: 10px;
   }
 
   .custom-scrollbar::-webkit-scrollbar-thumb:hover {
-    background: #D1A153;
+    background: #0870A9;
   }
 
   .chart-scroll-container {
@@ -110,35 +111,38 @@
 
 @layer utilities {
   .bg-slate-50 {
-    background-color: #F7F4EB;
+    background-color: #FEFEFE;
   }
 
   .text-slate-900,
-  .text-slate-800,
+  .text-slate-800 {
+    color: #000000;
+  }
+
   .text-slate-700 {
-    color: #4A4741;
+    color: #727376;
   }
 
   .border-slate-50,
   .border-slate-100,
   .border-slate-200 {
-    border-color: rgba(209, 194, 176, 0.65);
+    border-color: rgba(210, 211, 213, 0.9);
   }
 
   .hover\:bg-slate-50:hover {
-    background-color: rgba(247, 244, 235, 0.82);
+    background-color: rgba(210, 211, 213, 0.22);
   }
 
   .hover\:text-slate-900:hover,
   .hover\:text-slate-800:hover,
   .hover\:text-slate-700:hover {
-    color: #4A4741;
+    color: #000000;
   }
 
   .bg-blue-500,
   .bg-indigo-500,
   .hover\:bg-blue-600:hover {
-    background-color: #9B1919;
+    background-color: #0870A9;
   }
 
   .text-blue-700,
@@ -148,45 +152,24 @@
   .text-indigo-600,
   .text-indigo-500,
   .hover\:text-blue-600:hover {
-    color: #9B1919;
+    color: #0870A9;
   }
 
   .bg-blue-50,
   .bg-indigo-50 {
-    background-color: rgba(155, 25, 25, 0.08);
+    background-color: rgba(27, 196, 243, 0.1);
   }
 
   .border-blue-100,
   .border-indigo-100 {
-    border-color: rgba(155, 25, 25, 0.22);
-  }
-
-  .bg-amber-500,
-  .bg-amber-400,
-  .hover\:bg-amber-600:hover {
-    background-color: #D1A153;
-  }
-
-  .text-amber-700,
-  .text-amber-600,
-  .text-amber-500 {
-    color: #D1A153;
-  }
-
-  .bg-amber-50 {
-    background-color: rgba(209, 161, 83, 0.12);
-  }
-
-  .border-amber-100,
-  .border-amber-200 {
-    border-color: rgba(209, 161, 83, 0.32);
+    border-color: rgba(27, 196, 243, 0.28);
   }
 }
 
 /* Custom Tooltip Styling */
 .recharts-default-tooltip {
   @apply rounded-2xl dark:border-white/10 shadow-xl dark:shadow-none bg-white/95 dark:bg-slate-900/95 !important;
-  border-color: rgba(209, 194, 176, 0.75) !important;
+  border-color: rgba(107, 128, 155, 0.35) !important;
   backdrop-filter: blur(8px) !important;
 }
 
@@ -224,7 +207,7 @@
   html,
   body {
     background: #fff !important;
-    color: #4A4741 !important;
+    color: #000000 !important;
     font-size: 9pt !important;
     -webkit-print-color-adjust: exact !important;
     print-color-adjust: exact !important;
@@ -254,7 +237,7 @@
 
   .print-report-section {
     background: #fff !important;
-    border: 1px solid rgba(209, 194, 176, 0.85) !important;
+    border: 1px solid rgba(107, 128, 155, 0.45) !important;
     border-radius: 14px !important;
     box-shadow: none !important;
     margin: 0 0 7mm !important;
@@ -280,7 +263,7 @@
 
   .print-hero-card h2 {
     font-size: 17pt !important;
-    color: #4A4741 !important;
+    color: #000000 !important;
   }
 
   .print-summary-grid {
@@ -292,7 +275,7 @@
   }
 
   .print-kpi-card {
-    border: 1px solid rgba(209, 194, 176, 0.85) !important;
+    border: 1px solid rgba(107, 128, 155, 0.45) !important;
     border-radius: 12px !important;
     padding: 5mm !important;
     min-height: 26mm !important;
@@ -310,8 +293,8 @@
   }
 
   .print-level-card {
-    background: #F7F4EB !important;
-    border: 1px solid rgba(209, 194, 176, 0.9) !important;
+    background: #FEFEFE !important;
+    border: 1px solid rgba(107, 128, 155, 0.45) !important;
     border-radius: 12px !important;
     padding: 5mm !important;
     min-height: 38mm !important;
@@ -329,7 +312,7 @@
 
   .print-chart-card {
     height: 72mm !important;
-    border: 1px solid rgba(209, 194, 176, 0.85) !important;
+    border: 1px solid rgba(107, 128, 155, 0.45) !important;
     border-radius: 12px !important;
     padding: 6mm !important;
   }
@@ -390,6 +373,6 @@
   .dark span,
   .dark td,
   .dark th {
-    color: #4A4741 !important;
+    color: #000000 !important;
   }
 }

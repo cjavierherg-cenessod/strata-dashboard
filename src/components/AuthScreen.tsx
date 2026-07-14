@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import { 
-  BarChart, 
-  Mail, 
+import {
+  Mail,
   Lock, 
   LogIn, 
   ShieldCheck,
@@ -27,7 +26,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin }) => {
     setLoading(true);
 
     try {
-      const formattedEmail = email.includes('@') ? email : `${email}@stratasph.com`;
+      const formattedEmail = email.trim().toLowerCase();
 
       // 1. Standard Login with Supabase
       const { data, error: authError } = await supabase.auth.signInWithPassword({
@@ -61,9 +60,13 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin }) => {
         err.name === 'TypeError';
 
       if (isConnectionError) {
-        setError('El servidor STRATA (Supabase) está inalcanzable o en mantenimiento. Por favor, verifica tu conexión o contacta a soporte.');
+        setError('El servidor STRATA está inalcanzable. Verifica tu conexión e inténtalo nuevamente.');
+      } else if (err.code === 'invalid_credentials') {
+        setError('Correo o contraseña incorrectos. Usa el correo completo de tu cuenta STRATA.');
+      } else if (err.code === 'email_not_confirmed') {
+        setError('Tu correo todavía no ha sido confirmado. Contacta a un administrador de STRATA.');
       } else {
-        setError('Credenciales inválidas o problema de configuración.');
+        setError('No fue posible iniciar sesión. Inténtalo nuevamente o contacta a un administrador de STRATA.');
       }
     } finally {
       setLoading(false);
@@ -78,11 +81,11 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin }) => {
 
       <div className="max-w-md w-full relative z-10">
         <div className="text-center mb-10">
-          <div className="bg-primary-600 dark:bg-primary-500 w-16 h-16 rounded-[2rem] flex items-center justify-center mx-auto mb-6 text-white shadow-2xl shadow-primary-200 dark:shadow-none">
-            <BarChart size={32} />
+          <div className="w-20 h-20 flex items-center justify-center mx-auto mb-6">
+            <img src="/strata-logo-iso.png" alt="STRATA" className="h-20 w-auto object-contain drop-shadow-xl" />
           </div>
           <h1 className="text-4xl font-black text-slate-900 dark:text-white tracking-tighter mb-2 uppercase leading-none">
-            STRATA <span className="text-primary-600 dark:text-primary-500">AUTH</span>
+            STRATA <span className="text-primary-600 dark:text-primary-400">AUTH</span>
           </h1>
           <p className="text-slate-400 dark:text-slate-500 font-extrabold uppercase tracking-[0.3em] text-[10px]">
             Sistema Integrado de Control Electoral
@@ -97,15 +100,16 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin }) => {
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="space-y-2">
-              <label className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest ml-1">Usuario / Email</label>
+              <label className="text-[10px] font-black text-slate-400 dark:text-slate-500 uppercase tracking-widest ml-1">Correo electrónico</label>
               <div className="relative">
                 <Mail className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-400 dark:text-slate-500" size={18} />
                 <input 
-                  type="text" 
+                  type="email"
+                  autoComplete="email"
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="Ej. Admin"
+                  placeholder="usuario@empresa.com"
                   className="w-full pl-12 pr-6 py-4 bg-slate-50 dark:bg-slate-800 border border-slate-200 dark:border-white/10 rounded-2xl text-sm font-semibold text-slate-900 dark:text-white focus:ring-4 focus:ring-primary-500/20 focus:border-primary-500 transition-all outline-none placeholder:text-slate-300 dark:placeholder:text-slate-600"
                 />
               </div>
@@ -153,7 +157,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin }) => {
           <div className="mt-8 pt-6 border-t border-slate-100 dark:border-white/10 text-center">
             <div className="flex items-center justify-center gap-2 text-slate-400 dark:text-slate-500">
               <ShieldCheck size={14} />
-              <p className="text-[10px] font-bold uppercase tracking-widest">Conexión Segura de Administración</p>
+              <p className="text-[10px] font-bold uppercase tracking-widest">Conexión segura de administración</p>
             </div>
           </div>
         </div>
@@ -163,7 +167,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({ onLogin }) => {
             &copy; 2026 STRATA System | Advanced Data Protection
           </p>
           <div className="flex items-center gap-2 opacity-60">
-            <img src="/strata-logo.svg" alt="Strata Sphere" className="h-4 dark:invert" />
+            <img src="/strata-logo-iso.png" alt="Strata Sphere" className="h-7 w-auto" />
             <span className="text-slate-400 text-[10px] font-black uppercase tracking-widest">BY STRATA SPHERE</span>
           </div>
         </div>

@@ -50,11 +50,11 @@ interface AnalyticsPanelProps {
 }
 
 const PALETTES: Record<ColorPalette, string[]> = {
-  brand: ['#9B1919', '#D1A153', '#6B0B0B', '#D1C2B0', '#4A4741', '#F7F4EB'],
-  teal: ['#9B1919', '#B84A3F', '#D1A153', '#D1C2B0', '#6B0B0B'],
-  blue: ['#9B1919', '#6B0B0B', '#D1A153', '#D1C2B0', '#4A4741'],
-  purple: ['#6B0B0B', '#9B1919', '#D1A153', '#D1C2B0', '#4A4741'],
-  emerald: ['#9B1919', '#D1A153', '#6B0B0B', '#B84A3F', '#D1C2B0'],
+  brand: ['#0870A9', '#1BC4F3', '#6B809B', '#727376', '#D2D3D5', '#000000'],
+  teal: ['#0870A9', '#1BC4F3', '#6B809B', '#D2D3D5', '#727376'],
+  blue: ['#0870A9', '#1BC4F3', '#6B809B', '#727376', '#D2D3D5'],
+  purple: ['#6B809B', '#0870A9', '#1BC4F3', '#727376', '#D2D3D5'],
+  emerald: ['#0870A9', '#1BC4F3', '#6B809B', '#727376', '#D2D3D5'],
 };
 
 const normalizeDashboardFields = (fields: DashboardField[] = []): DashboardField[] =>
@@ -64,7 +64,7 @@ const normalizeDashboardFields = (fields: DashboardField[] = []): DashboardField
     order: Number.isFinite(field.order) ? field.order : index
   }));
 
-const GRAY_COLOR = '#D1C2B0';
+const GRAY_COLOR = '#D2D3D5';
 const SPECIAL_CATEGORIES = ['otros', 'no contest', 'ns/nc', 'n/s', 'n/c', 'ninguno', 'ninguna', 'no sabe', 'no especific', 'ningun', 'no respuesta'];
 
 const adjustColor = (hex: string, percent: number) => {

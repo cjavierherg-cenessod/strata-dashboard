@@ -473,7 +473,7 @@ const FieldDashboardMap: React.FC<{ payload: DashboardPayload }> = ({ payload })
   };
 
   return (
-    <section className="rounded-3xl border border-[#D1C2B0]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
+    <section className="rounded-3xl border border-[#D2D3D5]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
       <div className="mb-5 flex flex-col gap-3 xl:flex-row xl:items-end xl:justify-between">
         <div>
           <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">Mapas</p>
@@ -879,7 +879,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
 
   if (loading && !payload) {
     return (
-      <div className="min-h-screen bg-[#F7F4EB] dark:bg-slate-950 flex items-center justify-center p-8">
+      <div className="min-h-screen bg-[#FEFEFE] dark:bg-slate-950 flex items-center justify-center p-8">
         <div className="text-center">
           <RefreshCw size={28} className="mx-auto mb-4 animate-spin text-primary-600" />
           <p className="text-[10px] font-black uppercase tracking-[0.25em] text-slate-500">Cargando dashboard de campo...</p>
@@ -890,7 +890,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
 
   if (error && !payload) {
     return (
-      <div className="min-h-screen bg-[#F7F4EB] dark:bg-slate-950 flex items-center justify-center p-6">
+      <div className="min-h-screen bg-[#FEFEFE] dark:bg-slate-950 flex items-center justify-center p-6">
         <div className="max-w-lg rounded-3xl border border-red-100 bg-white p-8 text-center shadow-xl dark:border-red-900/30 dark:bg-slate-900">
           <AlertCircle size={34} className="mx-auto mb-4 text-red-500" />
           <h1 className="text-lg font-black uppercase text-slate-900 dark:text-white">Dashboard no disponible</h1>
@@ -909,8 +909,8 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
   const canViewAudio = payload.access?.canViewAudio !== false;
 
   return (
-    <div className="min-h-screen bg-[#F7F4EB] dark:bg-slate-950 text-[#4A4741] dark:text-slate-100">
-      <header className="sticky top-0 z-40 border-b border-[#D1C2B0]/60 bg-[#F7F4EB]/95 backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/90">
+    <div className="min-h-screen bg-[#FEFEFE] dark:bg-slate-950 text-[#727376] dark:text-slate-100">
+      <header className="sticky top-0 z-40 border-b border-[#D2D3D5]/60 bg-[#FEFEFE]/95 backdrop-blur-xl dark:border-white/10 dark:bg-slate-950/90">
         <div className="mx-auto flex max-w-[1600px] flex-col gap-4 px-4 py-4 sm:px-8 lg:flex-row lg:items-center lg:justify-between">
           <div className="flex min-w-0 items-center gap-4">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-primary-600 text-white shadow-lg shadow-primary-900/10">
@@ -939,7 +939,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
       </header>
 
       <main className="mx-auto max-w-[1600px] space-y-6 px-4 py-6 sm:px-8">
-        <section className="rounded-3xl border border-[#D1C2B0]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900 sm:p-6">
+        <section className="rounded-3xl border border-[#D2D3D5]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900 sm:p-6">
           <div className="flex flex-col gap-6 xl:flex-row xl:items-end xl:justify-between">
             <div className="max-w-4xl">
               <div className="mb-4 flex flex-wrap items-center gap-2">
@@ -1022,7 +1022,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
 
         {canViewOperations && (
         <section className="grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.25fr)_minmax(360px,0.75fr)]">
-          <div className="rounded-3xl border border-[#D1C2B0]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
+          <div className="rounded-3xl border border-[#D2D3D5]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
             <div className="mb-5 flex items-center justify-between gap-3">
               <div>
                 <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">Ritmo del levantamiento</p>
@@ -1038,7 +1038,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
                     <XAxis dataKey="label" tick={{ fontSize: 10, fontWeight: 800 }} />
                     <YAxis allowDecimals={false} tick={{ fontSize: 10, fontWeight: 800 }} />
                     <Tooltip />
-                    <Area type="monotone" dataKey="count" name="Registros" stroke="#9B1919" fill="#9B1919" fillOpacity={0.18} strokeWidth={3} />
+                    <Area type="monotone" dataKey="count" name="Registros" stroke="#0870A9" fill="#0870A9" fillOpacity={0.18} strokeWidth={3} />
                   </AreaChart>
                 </ResponsiveContainer>
               ) : (
@@ -1049,13 +1049,13 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
             </div>
           </div>
 
-          <div className="rounded-3xl border border-[#D1C2B0]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
+          <div className="rounded-3xl border border-[#D2D3D5]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
             <div className="mb-5 flex items-center justify-between gap-3">
               <div>
                 <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">Productividad</p>
                 <h3 className="mt-1 text-sm font-black uppercase text-slate-900 dark:text-white">Actividad por hora</h3>
               </div>
-              <BarChart3 size={18} className="text-[#D1A153]" />
+              <BarChart3 size={18} className="text-[#1BC4F3]" />
             </div>
             <div className="h-[310px]">
               {payload.hourly.length > 0 ? (
@@ -1065,7 +1065,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
                     <XAxis dataKey="hour" tick={{ fontSize: 9, fontWeight: 800 }} interval="preserveStartEnd" />
                     <YAxis allowDecimals={false} tick={{ fontSize: 10, fontWeight: 800 }} />
                     <Tooltip />
-                    <Bar dataKey="count" name="Registros" fill="#D1A153" radius={[8, 8, 0, 0]} />
+                    <Bar dataKey="count" name="Registros" fill="#1BC4F3" radius={[8, 8, 0, 0]} />
                   </BarChart>
                 </ResponsiveContainer>
               ) : (
@@ -1080,7 +1080,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
 
         {canViewOperations && (
         <section className="grid grid-cols-1 gap-6 xl:grid-cols-2">
-          <div className="rounded-3xl border border-[#D1C2B0]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
+          <div className="rounded-3xl border border-[#D2D3D5]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
             <div className="mb-5">
               <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">Avance por unidad</p>
               <h3 className="mt-1 text-sm font-black uppercase text-slate-900 dark:text-white">
@@ -1109,7 +1109,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
             </div>
           </div>
 
-          <div className="rounded-3xl border border-[#D1C2B0]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
+          <div className="rounded-3xl border border-[#D2D3D5]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
             <div className="mb-5">
               <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">Productividad por equipo</p>
               <h3 className="mt-1 text-sm font-black uppercase text-slate-900 dark:text-white">
@@ -1136,7 +1136,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
         )}
 
         {canViewOperations && (
-        <section className="rounded-3xl border border-[#D1C2B0]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
+        <section className="rounded-3xl border border-[#D2D3D5]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
           <div className="mb-5 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
             <div>
               <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">Avance equipo x unidad</p>
@@ -1199,7 +1199,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
               <tbody className="divide-y divide-slate-100 dark:divide-white/10">
                 {teamBreakdownRows.map(team => (
                   <React.Fragment key={team.team_name}>
-                    <tr className="bg-[#F7F4EB] dark:bg-slate-800/90">
+                    <tr className="bg-[#FEFEFE] dark:bg-slate-800/90">
                       <td className="px-4 py-3 text-xs font-black uppercase tracking-wide text-slate-900 dark:text-white">
                         <button
                           type="button"
@@ -1237,7 +1237,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
         )}
 
         {canViewAudio && (
-        <section className="rounded-3xl border border-[#D1C2B0]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
+        <section className="rounded-3xl border border-[#D2D3D5]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
           <div className="mb-5 flex flex-col gap-3 xl:flex-row xl:items-end xl:justify-between">
             <div>
               <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">KoboToolbox</p>
@@ -1412,7 +1412,7 @@ export const PublicFieldDashboard: React.FC<PublicFieldDashboardProps> = ({ toke
         )}
 
         {canViewOperations && (
-        <section className="rounded-3xl border border-[#D1C2B0]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
+        <section className="rounded-3xl border border-[#D2D3D5]/70 bg-white p-5 shadow-sm dark:border-white/10 dark:bg-slate-900">
           <div className="mb-5">
             <p className="text-[9px] font-black uppercase tracking-widest text-slate-400">Bitacora</p>
             <h3 className="mt-1 text-sm font-black uppercase text-slate-900 dark:text-white">Ultimos registros detectados</h3>
